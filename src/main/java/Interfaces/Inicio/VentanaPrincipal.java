@@ -25,10 +25,10 @@ public class VentanaPrincipal extends JFrame implements Runnable{
     private JMenuBar menuBar = new JMenuBar();
     private JMenu menuSistema = new JMenu("Sistema");
     private JMenu menuAdministradores = new JMenu("Administradores");
-    private JMenu menuCarreras = new JMenu("Carreras y Áreas");
+    private JMenu menuCarreras = new JMenu("Carreras y ?reas");
     private JMenu menuComunidad = new JMenu("Comunidad");
     private JMenu menuServicios = new JMenu("Servicios");
-    private JMenu menuInfo = new JMenu("Información");
+    private JMenu menuInfo = new JMenu("Informaci?n");
     private JMenuItem itemCerrar = new JMenuItem();
     private JMenuItem itemSalir = new JMenuItem();
     private JMenuItem itemAgregarAdmin = new JMenuItem();
@@ -96,7 +96,7 @@ public class VentanaPrincipal extends JFrame implements Runnable{
         //Propiedades de los item para el menu sistema
         itemCerrar.setFont(new Font("Segoe UI Symbol", Font.BOLD, 14));
         itemCerrar.setForeground(Color.BLACK);
-        itemCerrar.setText("Cerrar Sesión");
+        itemCerrar.setText("Cerrar Sesi?n");
         itemCerrar.setIcon(new ImageIcon("src/main/resources/Iconos/logout.png"));
         itemCerrar.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C, InputEvent.CTRL_DOWN_MASK));
         menuSistema.add(itemCerrar);
@@ -137,13 +137,13 @@ public class VentanaPrincipal extends JFrame implements Runnable{
         //Propiedades de los item para el menu carrera
         itemAgregarCarrera.setFont(new Font("Segoe UI Symbol", Font.BOLD, 14));
         itemAgregarCarrera.setForeground(Color.BLACK);
-        itemAgregarCarrera.setText("Agregar Carrera o Área");
+        itemAgregarCarrera.setText("Agregar Carrera o ?rea");
         itemAgregarCarrera.setIcon(new ImageIcon("src/main/resources/Iconos/agregar.png"));
         itemAgregarCarrera.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Q, InputEvent.CTRL_DOWN_MASK));
         menuCarreras.add(itemAgregarCarrera);
         itemListadoCarrera.setFont(new Font("Segoe UI Symbol", Font.BOLD, 14));
         itemListadoCarrera.setForeground(Color.BLACK);
-        itemListadoCarrera.setText("Listado de Carreras y Áreas");
+        itemListadoCarrera.setText("Listado de Carreras y ?reas");
         itemListadoCarrera.setIcon(new ImageIcon("src/main/resources/Iconos/listado.png"));
         itemListadoCarrera.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_W, InputEvent.CTRL_DOWN_MASK));
         menuCarreras.add(itemListadoCarrera);
@@ -239,13 +239,10 @@ public class VentanaPrincipal extends JFrame implements Runnable{
         this.setExtendedState(MAXIMIZED_BOTH);
         this.setResizable(Boolean.FALSE);
         this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        this.setTitle(".: Sistema de Registro de Usuarios y Servicios para el Tecnológico de Estudios Superiores de Ecatepec :.");
+        this.setTitle(".: Sistema de Registro de Usuarios y Servicios para el TecnolÃ³gico de Estudios Superiores de Ecatepec :.");
         this.setIconImage(new ImageIcon("src/main/resources/Iconos/logo.png").getImage());
         this.add(escritorio);
 
-        /**
-         * Eventos de los items
-         */
         this.addWindowListener(new WindowListener() {
             @Override
             public void windowOpened(WindowEvent e) {
@@ -304,7 +301,7 @@ public class VentanaPrincipal extends JFrame implements Runnable{
         });
     }
     private void confirmarCierre(){
-        int res = JOptionPane.showInternalConfirmDialog(escritorio, "¿Estas seguro de salir del sistema?", "Confirmar cierre del sistema. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
+        int res = JOptionPane.showInternalConfirmDialog(escritorio, "?Estas seguro de salir del sistema?", "Confirmar cierre del sistema. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
         if (res == JOptionPane.YES_OPTION) {
             System.exit(0);
         }
@@ -312,7 +309,7 @@ public class VentanaPrincipal extends JFrame implements Runnable{
     
     //-------------------------------------------------------------------------------------------
     private void itemCerrarActionPerformed(ActionEvent evt) {
-        int res = JOptionPane.showInternalConfirmDialog(escritorio, "¿Estas seguro de cerrar la sesión actual?", "Confirmar cierre de sesión. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
+        int res = JOptionPane.showInternalConfirmDialog(escritorio, "?Estas seguro de cerrar la sesi?n actual?", "Confirmar cierre de sesi?n. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
         if (res == JOptionPane.YES_OPTION) {
             InicioSesion is = new InicioSesion();
             is.setVisible(Boolean.TRUE);
@@ -320,7 +317,7 @@ public class VentanaPrincipal extends JFrame implements Runnable{
         }
     }
     private void itemSalirActionPerformed(ActionEvent evt) {
-        int res = JOptionPane.showInternalConfirmDialog(escritorio, "¿Estas seguro de salir del sistema?", "Confirmar cierre del sistema. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
+        int res = JOptionPane.showInternalConfirmDialog(escritorio, "?Estas seguro de salir del sistema?", "Confirmar cierre del sistema. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
         if (res == JOptionPane.YES_OPTION) {
             System.exit(0);
         }
