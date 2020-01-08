@@ -5,11 +5,12 @@
  */
 package MySQL;
 
-import Conexion.*;
+import Conexion.Conexion;
+import org.apache.commons.codec.digest.DigestUtils;
 
-import java.sql.*;
-
-import org.apache.commons.codec.digest.*;
+import java.sql.CallableStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  * @author David Esquivel Mendoza
@@ -79,21 +80,22 @@ public class Administrador extends Conexion {
         return existe;
     }
 
-    /**
-     * @return
-     * @throws java.lang.ClassNotFoundException
-     */
-    public int administradorContar() throws ClassNotFoundException {
-        int cantidad = 0;
-        try {
-            if (conectar()) {
-                proc = getConn().prepareCall("{CALL administradorContar()}");
-                res = proc.executeQuery();
-                if (res.next()) {
-                    cantidad = res.getInt("cantidad");
-                    System.out.println(cantidad);
-                }
-                res.close();
+	/**
+	 * @return
+	 *
+	 * @throws java.lang.ClassNotFoundException
+	 */
+	public int administradorContar() {
+		int cantidad = 0;
+		try {
+			if (conectar()) {
+				proc = getConn().prepareCall("{CALL administradorContar()}");
+				res = proc.executeQuery();
+				if (res.next()) {
+					cantidad = res.getInt("cantidad");
+					System.out.println(cantidad);
+				}
+				res.close();
                 proc.close();
                 desconectar();
             }
@@ -101,23 +103,24 @@ public class Administrador extends Conexion {
             System.out.println("Error en la función administradorContar: " + ex);
         }
         return cantidad;
-    }
+	}
 
-    /**
-     * @return
-     * @throws java.lang.ClassNotFoundException
-     */
-    public Object[][] administradorConsultar() throws ClassNotFoundException {
-        Object[][] datos = new Object[administradorContar()][campos - 2];
-        try {
-            if (conectar()) {
-                proc = getConn().prepareCall("{CALL administradorConsultar()}");
-                res = proc.executeQuery();
-                int registro = 0;
-                while (res.next()) {
-                    for (int i = 0; i < campos - 2; i++) {
-                        datos[registro][i] = res.getObject(i + 1);
-                        System.out.println(datos[registro][i]);
+	/**
+	 * @return
+	 *
+	 * @throws java.lang.ClassNotFoundException
+	 */
+	public Object[][] administradorConsultar() {
+		Object[][] datos = new Object[administradorContar()][campos - 2];
+		try {
+			if (conectar()) {
+				proc = getConn().prepareCall("{CALL administradorConsultar()}");
+				res = proc.executeQuery();
+				int registro = 0;
+				while (res.next()) {
+					for (int i = 0; i < campos - 2; i++) {
+						datos[registro][i] = res.getObject(i + 1);
+						System.out.println(datos[registro][i]);
                     }
                     registro++;
                 }
@@ -129,24 +132,26 @@ public class Administrador extends Conexion {
             System.out.println("Error en la función administradorConsultar: " + ex);
         }
         return datos;
-    }
+	}
 
-    /**
-     * @param dato
-     * @return
-     * @throws java.lang.ClassNotFoundException
-     */
-    public int administradorContarBuscado(String dato) throws ClassNotFoundException {
-        int cantidad = 0;
-        try {
-            if (conectar()) {
-                proc = getConn().prepareCall("{CALL administradorContarBuscado(?)}");
-                proc.setString("paramDato", dato);
-                res = proc.executeQuery();
-                if (res.next()) {
-                    cantidad = res.getInt("cantidad");
-                    System.out.println(cantidad);
-                }
+	/**
+	 * @param dato
+	 *
+	 * @return
+	 *
+	 * @throws java.lang.ClassNotFoundException
+	 */
+	public int administradorContarBuscado(String dato) {
+		int cantidad = 0;
+		try {
+			if (conectar()) {
+				proc = getConn().prepareCall("{CALL administradorContarBuscado(?)}");
+				proc.setString("paramDato", dato);
+				res = proc.executeQuery();
+				if (res.next()) {
+					cantidad = res.getInt("cantidad");
+					System.out.println(cantidad);
+				}
                 res.close();
                 proc.close();
                 desconectar();
@@ -154,25 +159,27 @@ public class Administrador extends Conexion {
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorContarBuscado " + ex);
         }
-        return cantidad;
-    }
+		return cantidad;
+	}
 
-    /**
-     * @param dato
-     * @return
-     * @throws java.lang.ClassNotFoundException
-     */
-    public Object[][] administradorBuscar(String dato) throws ClassNotFoundException {
-        Object[][] datos = new Object[administradorContarBuscado(dato)][campos - 2];
-        try {
-            if (conectar()) {
-                proc = getConn().prepareCall("{CALL administradorBuscar(?)}");
-                proc.setString("paramDato", dato);
-                res = proc.executeQuery();
-                int registro = 0;
-                while (res.next()) {
-                    for (int i = 0; i < campos - 2; i++) {
-                        datos[registro][i] = res.getObject(i + 1);
+	/**
+	 * @param dato
+	 *
+	 * @return
+	 *
+	 * @throws java.lang.ClassNotFoundException
+	 */
+	public Object[][] administradorBuscar(String dato) {
+		Object[][] datos = new Object[administradorContarBuscado(dato)][campos - 2];
+		try {
+			if (conectar()) {
+				proc = getConn().prepareCall("{CALL administradorBuscar(?)}");
+				proc.setString("paramDato", dato);
+				res = proc.executeQuery();
+				int registro = 0;
+				while (res.next()) {
+					for (int i = 0; i < campos - 2; i++) {
+						datos[registro][i] = res.getObject(i + 1);
                         System.out.println(datos[registro][i]);
                     }
                     registro++;
@@ -183,26 +190,28 @@ public class Administrador extends Conexion {
             }
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorBuscar " + ex);
-        }
-        return datos;
-    }
+		}
+		return datos;
+	}
 
-    /**
-     * @param login
-     * @return
-     * @throws java.lang.ClassNotFoundException
-     */
-    public Object[] administradorSeleccionar(String login) throws ClassNotFoundException {
-        Object[] dato = new Object[campos + 1];
-        try {
-            if (conectar()) {
-                proc = getConn().prepareCall("{CALL administradorSeleccionar(?)}");
-                proc.setString("paramLogin", login);
-                res = proc.executeQuery();
-                if (res.next()) {
-                    for (int i = 0; i < campos; i++) {
-                        dato[i] = res.getObject(i + 1);
-                        System.out.println(dato[i]);
+	/**
+	 * @param login
+	 *
+	 * @return
+	 *
+	 * @throws java.lang.ClassNotFoundException
+	 */
+	public Object[] administradorSeleccionar(String login) {
+		Object[] dato = new Object[campos + 1];
+		try {
+			if (conectar()) {
+				proc = getConn().prepareCall("{CALL administradorSeleccionar(?)}");
+				proc.setString("paramLogin", login);
+				res = proc.executeQuery();
+				if (res.next()) {
+					for (int i = 0; i < campos; i++) {
+						dato[i] = res.getObject(i + 1);
+						System.out.println(dato[i]);
                     }
                 }
                 res.close();
@@ -244,51 +253,55 @@ public class Administrador extends Conexion {
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorInsertar " + ex);
         }
-        return insertado;
+	    return insertado;
     }
 
-    /**
-     * @param login
-     * @return
-     * @throws java.lang.ClassNotFoundException
-     */
-    public boolean administradorEliminar(String login) throws ClassNotFoundException {
-        boolean eliminado = false;
-        try {
-            if (conectar()) {
-                proc = getConn().prepareCall("{CALL administradorEliminar(?)}");
-                proc.setString("paramLogin", login);
-                proc.executeUpdate();
-                eliminado = true;
-                System.out.println(eliminado);
-                proc.close();
+	/**
+	 * @param login
+	 *
+	 * @return
+	 *
+	 * @throws java.lang.ClassNotFoundException
+	 */
+	public boolean administradorEliminar(String login) {
+		boolean eliminado = false;
+		try {
+			if (conectar()) {
+				proc = getConn().prepareCall("{CALL administradorEliminar(?)}");
+				proc.setString("paramLogin", login);
+				proc.executeUpdate();
+				eliminado = true;
+				System.out.println(eliminado);
+				proc.close();
                 desconectar();
             }
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorEliminar " + ex);
-        }
-        return eliminado;
-    }
+		}
+		return eliminado;
+	}
 
-    /**
-     * @param login
-     * @param nombre
-     * @param password
-     * @param carrera
-     * @param tipo
-     * @return
-     * @throws java.lang.ClassNotFoundException
-     */
-    public boolean administradorModificar(String login, String nombre, String password, String carrera, String tipo) throws ClassNotFoundException {
-        boolean modificado = true;
-        try {
-            if (conectar()) {
-                proc = getConn().prepareCall("{CALL administradorModificar(?, ?, ?, ?, ?)}");
-                passwordX = DigestUtils.sha256Hex(password);
-                proc.setString("paramLogin", login);
-                proc.setString("paramNombre", nombre);
-                proc.setString("paramPassword", passwordX);
-                proc.setString("paramCarrera", carrera);
+	/**
+	 * @param login
+	 * @param nombre
+	 * @param password
+	 * @param carrera
+	 * @param tipo
+	 *
+	 * @return
+	 *
+	 * @throws java.lang.ClassNotFoundException
+	 */
+	public boolean administradorModificar(String login, String nombre, String password, String carrera, String tipo) {
+		boolean modificado = true;
+		try {
+			if (conectar()) {
+				proc = getConn().prepareCall("{CALL administradorModificar(?, ?, ?, ?, ?)}");
+				passwordX = DigestUtils.sha256Hex(password);
+				proc.setString("paramLogin", login);
+				proc.setString("paramNombre", nombre);
+				proc.setString("paramPassword", passwordX);
+				proc.setString("paramCarrera", carrera);
                 proc.setString("paramTipo", tipo);
                 proc.executeUpdate();
                 modificado = true;

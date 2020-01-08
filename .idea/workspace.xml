@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c76f2343-7007-4ca8-a773-2a2dbf32f916" name="Default Changelist" comment="" />
+    <list default="true" id="c76f2343-7007-4ca8-a773-2a2dbf32f916" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Administrador/AdministradorSeleccionado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Administrador/ListadoAdministrador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TextPrompt/TextPrompt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Iconos/busqueda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Iconos/editar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Iconos/eliminar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Iconos/listado_16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Administrador/AgregarAdministrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Administrador/AgregarAdministrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Inicio/InicioSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Inicio/InicioSesion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Inicio/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Inicio/VentanaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MySQL/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MySQL/Administrador.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +42,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1W2DDxLeKQDhYJqEvIsm0o6AAWb" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -32,15 +52,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/Iconos" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\roule\IdeaProjects\SiRiUSv3.0\src\main\resources\Iconos" />
+      <recent name="C:\Users\roule\IdeaProjects\SiRiUSv3.0\src\main\java\TextPrompt" />
     </key>
   </component>
   <component name="RunManager">
@@ -86,53 +108,81 @@
       <option name="presentableId" value="Default" />
       <updated>1578338681605</updated>
     </task>
+    <task id="LOCAL-00001" summary="Commit desde IntelliJ.">
+      <created>1578511586953</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578511586953</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit desde IntelliJ." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit desde IntelliJ." />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="46" key="#Notifications" timestamp="1578510642115">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="46" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1578510642115" />
-    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser" timestamp="1578365699145">
+    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser" timestamp="1578518062501">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1578365699145" />
+    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1578518062501" />
     <state x="484" y="253" width="398" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578343397790">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="484" y="253" width="398" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.768@0.0.1366.768" timestamp="1578343397790" />
-    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2" timestamp="1578511538640">
+    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2" timestamp="1578511584609">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578511538640" />
+    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578511584609" />
     <state x="485" y="128" key="FileChooserDialogImpl" timestamp="1578510462600">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="485" y="128" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1578510462600" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1578510796084">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1578527047982">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1578510796084" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1578510796084">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1578527047982" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1578527047982">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1578510796084" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1578510796084">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1578527047982" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1578527047982">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1578510796084" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1578510796084">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1578527047982" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1578527047982">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1578510796084" />
-    <state x="206" y="16" width="998" height="708" key="SettingsEditor" timestamp="1578510789028">
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1578527047982" />
+    <state x="206" y="16" width="998" height="708" key="SettingsEditor" timestamp="1578511652673">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="206" y="16" width="998" height="708" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1578510789028" />
+    <state x="206" y="16" width="998" height="708" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1578511652673" />
+    <state x="275" y="120" key="Vcs.Push.Dialog.v2" timestamp="1578511697150">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="120" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1578511697150" />
     <state x="391" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1578511468322">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="391" y="212" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1578511468322" />
+    <state x="298" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578521198629">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="298" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1578521198629" />
+    <state x="494" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578511620222">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="494" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1578511620222" />
+    <state x="271" y="188" key="git4idea.merge.GitPullDialog" timestamp="1578511677206">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="271" y="188" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1578511677206" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1578348510838">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

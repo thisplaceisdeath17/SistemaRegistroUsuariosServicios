@@ -23,7 +23,7 @@ public class InicioSesion extends JFrame {
     private JPanel po = new JPanel();
     private JLabel lblTiempo = new JLabel("60");
     private JLabel lblOportunidades = new JLabel("2");
-    private JLabel lblPassword = new JLabel("Contraseña");
+    private JLabel lblPassword = new JLabel("ContraseÃ±a");
     private JLabel lblLogin = new JLabel("Nombre de Usuario");
     private JLabel lblLogo = new JLabel();
     private JButton btnIngresar = new JButton();
@@ -53,7 +53,7 @@ public class InicioSesion extends JFrame {
             tiempo--;
             lblTiempo.setText(String.valueOf(tiempo));
             if (tiempo == 0) {
-                JOptionPane.showMessageDialog(InicioSesion.this, "El tiempo se ha agotado. Esta ventana se cerrará.", "Tiempo Agotado. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
+                JOptionPane.showMessageDialog(InicioSesion.this, "El tiempo se ha agotado. Esta ventana se cerrarÃ¡.", "Tiempo Agotado. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
                 temporizador.stop();
                 System.exit(0);
             }
@@ -132,7 +132,7 @@ public class InicioSesion extends JFrame {
         btnVer.setBounds(340, 370, 30, 30);
         btnVer.setBackground(new Color(242, 245, 242));
         btnVer.setIcon(new ImageIcon("src/main/resources/Iconos/no_eyes.png"));
-        btnVer.setToolTipText("Clic para ver contraseña.");
+        btnVer.setToolTipText("Clic para ver contraseÃ±a.");
 
         //Propiedades del lblLogo.
         ImageIcon logo = new ImageIcon("src/main/resources/Iconos/logo.png");
@@ -219,7 +219,7 @@ public class InicioSesion extends JFrame {
 
     private void txtLoginKeyPressed(KeyEvent evt) {
         if (txtLogin.getText().length() == 15) {
-            JOptionPane.showMessageDialog(InicioSesion.this, "Has alcanzado el límite de caracteres permitidos.", "Límite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+            JOptionPane.showMessageDialog(InicioSesion.this, "Has alcanzado el lÃ­mite de caracteres permitidos.", "LÃ­mite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
             txtLogin.requestFocus();
             evt.consume();
         }
@@ -227,7 +227,7 @@ public class InicioSesion extends JFrame {
 
     private void txtPasswordKeyPressed(KeyEvent evt) {
         if (txtPassword.getText().length() == 15) {
-            JOptionPane.showMessageDialog(InicioSesion.this, "Has alcanzado el límite de caracteres permitidos.", "Límite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+            JOptionPane.showMessageDialog(InicioSesion.this, "Has alcanzado el lÃ­mite de caracteres permitidos.", "LÃ­mite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
             txtPassword.requestFocus();
             evt.consume();
         }
@@ -254,21 +254,21 @@ public class InicioSesion extends JFrame {
             }
         } else {
             temporizador.start();
-            JOptionPane.showMessageDialog(InicioSesion.this, "Nombre de usuario o contraseña incorrectos, revise de nuevo.", "Acceso Denegado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+            JOptionPane.showMessageDialog(InicioSesion.this, "Nombre de usuario o contraseÃ±a incorrectos, revise de nuevo.", "Acceso Denegado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
             txtLogin.requestFocus();
             txtLogin.setText("");
             txtPassword.setText("");
             lblOportunidades.setText(String.valueOf(oportunidades));
             oportunidades--;
             if (oportunidades == 0) {
-                JOptionPane.showMessageDialog(InicioSesion.this, "Las oportunidades se han agotado. El sistema se cerrará.", "Oportunidades agotadas. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
+                JOptionPane.showMessageDialog(InicioSesion.this, "Las oportunidades se han agotado. El sistema se cerrarÃ¡.", "Oportunidades agotadas. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
                 System.exit(0);
             }
         }
     }
 
     private void btnSalirActionPerformed(ActionEvent evt) {
-        int res = JOptionPane.showConfirmDialog(InicioSesion.this, "¿Estas seguro de cerrar el sistema?", "Confirmar cierre. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
+        int res = JOptionPane.showConfirmDialog(InicioSesion.this, "Â¿Estas seguro de cerrar el sistema?", "Confirmar cierre. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
         if (res == JOptionPane.YES_OPTION) {
             System.exit(0);
         }

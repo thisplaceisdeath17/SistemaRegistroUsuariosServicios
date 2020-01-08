@@ -1,14 +1,11 @@
 package Interfaces.Inicio;
 
 import Interfaces.Administrador.AgregarAdministrador;
+import Interfaces.Administrador.ListadoAdministrador;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
+import java.awt.event.*;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -20,16 +17,16 @@ import java.util.GregorianCalendar;
  *
  */
 public class VentanaPrincipal extends JFrame implements Runnable{
-    
-    private static JDesktopPane escritorio = new JDesktopPane();
-    private JMenuBar menuBar = new JMenuBar();
+
+	public static JDesktopPane escritorio = new JDesktopPane();
+	private JMenuBar menuBar = new JMenuBar();
     private JMenu menuSistema = new JMenu("Sistema");
-    private JMenu menuAdministradores = new JMenu("Administradores");
-    private JMenu menuCarreras = new JMenu("Carreras y ?reas");
-    private JMenu menuComunidad = new JMenu("Comunidad");
-    private JMenu menuServicios = new JMenu("Servicios");
-    private JMenu menuInfo = new JMenu("Informaci?n");
-    private JMenuItem itemCerrar = new JMenuItem();
+	private JMenu menuAdministradores = new JMenu("Administradores");
+	private JMenu menuCarreras = new JMenu("Carreras y Áreas");
+	private JMenu menuComunidad = new JMenu("Comunidad");
+	private JMenu menuServicios = new JMenu("Servicios");
+	private JMenu menuInfo = new JMenu("Información");
+	private JMenuItem itemCerrar = new JMenuItem();
     private JMenuItem itemSalir = new JMenuItem();
     private JMenuItem itemAgregarAdmin = new JMenuItem();
     private JMenuItem itemAgregarTA = new JMenuItem();
@@ -290,18 +287,24 @@ public class VentanaPrincipal extends JFrame implements Runnable{
         itemSalir.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                itemSalirActionPerformed(e);
+	            itemSalirActionPerformed(e);
             }
         });
-        itemAgregarAdmin.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                itemAgregarAdminActionPerformed(e);
-            }
-        });
+	    itemAgregarAdmin.addActionListener(new ActionListener() {
+		    @Override
+		    public void actionPerformed(ActionEvent e) {
+			    itemAgregarAdminActionPerformed(e);
+		    }
+	    });
+	    itemListadoAdmin.addActionListener(new ActionListener() {
+		    @Override
+		    public void actionPerformed(ActionEvent e) {
+			    itemListadoAdminActionPerformed(e);
+		    }
+	    });
     }
     private void confirmarCierre(){
-        int res = JOptionPane.showInternalConfirmDialog(escritorio, "?Estas seguro de salir del sistema?", "Confirmar cierre del sistema. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
+	    int res = JOptionPane.showInternalConfirmDialog(escritorio, "¿Estas seguro de salir del sistema?", "Confirmar cierre del sistema. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
         if (res == JOptionPane.YES_OPTION) {
             System.exit(0);
         }
@@ -309,7 +312,7 @@ public class VentanaPrincipal extends JFrame implements Runnable{
     
     //-------------------------------------------------------------------------------------------
     private void itemCerrarActionPerformed(ActionEvent evt) {
-        int res = JOptionPane.showInternalConfirmDialog(escritorio, "?Estas seguro de cerrar la sesi?n actual?", "Confirmar cierre de sesi?n. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
+	    int res = JOptionPane.showInternalConfirmDialog(escritorio, "¿Estas seguro de cerrar la sesión actual?", "Confirmar cierre de sesión. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
         if (res == JOptionPane.YES_OPTION) {
             InicioSesion is = new InicioSesion();
             is.setVisible(Boolean.TRUE);
@@ -324,26 +327,40 @@ public class VentanaPrincipal extends JFrame implements Runnable{
     }
     private void itemAgregarAdminActionPerformed(ActionEvent evt) {
         AgregarAdministrador aa = new AgregarAdministrador(administrador);
-        int x = (escritorio.getWidth() / 2) - aa.getWidth() / 2;
-        int y = (escritorio.getHeight() / 2) - aa.getHeight() / 2;
-        if (aa.isShowing()) {
-            aa.setLocation(x, y);
-        } else {
-            escritorio.add(aa);
-            aa.setLocation(x, y);
-            aa.show();
-        }
-    }
-    //-------------------------------------------------------------------------------------------
-    public static String fecha() {
-        Date fecha = new Date();
-        SimpleDateFormat format = new SimpleDateFormat("EEE dd 'de' MMMM 'del' YYYY");
-        return format.format(fecha);
+	    int x = (escritorio.getWidth() / 2) - aa.getWidth() / 2;
+	    int y = (escritorio.getHeight() / 2) - aa.getHeight() / 2;
+	    if (aa.isShowing()) {
+		    aa.setLocation(x, y);
+	    } else {
+		    escritorio.add(aa);
+		    aa.setLocation(x, y);
+		    aa.show();
+	    }
     }
 
-    public void hora() {
-        Calendar calendar = new GregorianCalendar();
-        Date horaActual = new Date();
+	private void itemListadoAdminActionPerformed(ActionEvent evt) {
+		ListadoAdministrador la = new ListadoAdministrador(administrador);
+		int x = (escritorio.getWidth() / 2) - la.getWidth() / 2;
+		int y = (escritorio.getHeight() / 2) - la.getHeight() / 2;
+		if (la.isShowing()) {
+			la.setLocation(x, y);
+		} else {
+			escritorio.add(la);
+			la.setLocation(x, y);
+			la.show();
+		}
+	}
+
+	//-------------------------------------------------------------------------------------------
+	public static String fecha() {
+		Date fecha = new Date();
+		SimpleDateFormat format = new SimpleDateFormat("EEE dd 'de' MMMM 'del' YYYY");
+		return format.format(fecha);
+	}
+
+	public void hora() {
+		Calendar calendar = new GregorianCalendar();
+		Date horaActual = new Date();
         calendar.setTime(horaActual);
         hora = calendar.get(Calendar.HOUR_OF_DAY) > 9 ? "" + calendar.get(Calendar.HOUR_OF_DAY) : "0" + calendar.get(Calendar.HOUR_OF_DAY);
         minuto = calendar.get(Calendar.MINUTE) > 9 ? "" + calendar.get(Calendar.MINUTE) : "0" + calendar.get(Calendar.MINUTE);

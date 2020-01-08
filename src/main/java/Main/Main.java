@@ -1,17 +1,16 @@
 package Main;
 
-import Conexion.Conexion;
 import Interfaces.Inicio.InicioSesion;
-import com.jgoodies.looks.plastic.Plastic3DLookAndFeel;
 import com.jgoodies.looks.plastic.PlasticLookAndFeel;
-import com.jgoodies.looks.plastic.theme.ExperienceRoyale;
+import com.jgoodies.looks.plastic.PlasticXPLookAndFeel;
+import com.jgoodies.looks.plastic.theme.DesertBlue;
 
 import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        PlasticLookAndFeel laf = new Plastic3DLookAndFeel();
-        Plastic3DLookAndFeel.setCurrentTheme(new ExperienceRoyale());
+        PlasticLookAndFeel laf = new PlasticXPLookAndFeel();
+        PlasticXPLookAndFeel.setCurrentTheme(new DesertBlue());
         try {
             UIManager.setLookAndFeel(laf);
         } catch (UnsupportedLookAndFeelException ex) {
