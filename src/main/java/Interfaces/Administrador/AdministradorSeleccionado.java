@@ -40,6 +40,7 @@ public class AdministradorSeleccionado extends JInternalFrame {
 	private ImageIcon error = new ImageIcon("src/main/resources/Iconos/error.png");
 	private ImageIcon exito = new ImageIcon("src/main/resources/Iconos/exito.png");
 	private ImageIcon pregunta = new ImageIcon("src/main/resources/Iconos/pregunta.png");
+	private ImageIcon informacion = new ImageIcon("src/main/resources/Iconos/info.png");
 
 	//Variables y objetos
 	private String login = null;
@@ -380,6 +381,7 @@ public class AdministradorSeleccionado extends JInternalFrame {
 			String confPassword = txtConfPassword.getText();
 			String carrera = datosCA[cboCarrera.getSelectedIndex()][0].toString();
 			String tipo = datosTA[cboTipo.getSelectedIndex()][0].toString();
+			String admin = String.valueOf(usuario[0]);
 			datosAdmin = a.administradorValidar(login, password);
 			if (nombre.isEmpty()) {
 				JOptionPane.showInternalMessageDialog(AdministradorSeleccionado.this, "El campo nombre completo no puede quedar vacío.", "Campo vacío. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
@@ -398,12 +400,15 @@ public class AdministradorSeleccionado extends JInternalFrame {
 				txtPassword.requestFocus();
 				txtPassword.setText("");
 			} else if (!confPassword.equals(nuevaPassword)) {
-				JOptionPane.showInternalMessageDialog(AdministradorSeleccionado.this, "La nueva contraseña no coincide con la comfirmación.", "Contraseñas diferentes. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+				JOptionPane.showInternalMessageDialog(AdministradorSeleccionado.this, "La nueva contraseña no coincide con la confirmación.", "Contraseñas diferentes. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
 				txtNuevaPassword.requestFocus();
 				txtConfPassword.setText("");
 			} else if (a.administradorModificar(login, nombre, nuevaPassword, carrera, tipo)) {
 				JOptionPane.showInternalMessageDialog(AdministradorSeleccionado.this, "La modificación se ejecutó correctamente.", "Modificación correcta. - SiRiUS.", JOptionPane.INFORMATION_MESSAGE, exito);
-				abrirListado();
+				if (admin.equals(login)) {
+					JOptionPane.showInternalMessageDialog(AdministradorSeleccionado.this, "Para que la modificación surta efecto, se cerrará el sistema y deberá iniciar una nueva sesión.", "Cierre de sesión. - SiRiUS.", JOptionPane.INFORMATION_MESSAGE, informacion);
+					System.exit(0);
+				}
 			} else {
 				JOptionPane.showInternalMessageDialog(AdministradorSeleccionado.this, "La modificación no se ejecutó, debido a un error de comunicación con la base de datos. Esta ventana se cerrará.", "Error de comunicación. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
 				this.dispose();
