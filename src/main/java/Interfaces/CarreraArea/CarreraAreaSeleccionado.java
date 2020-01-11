@@ -1,5 +1,6 @@
 package Interfaces.CarreraArea;
 
+import Interfaces.Inicio.VentanaPrincipal;
 import MySQL.CarreraArea;
 import TextPrompt.TextPrompt;
 import com.jgoodies.binding.adapter.ComboBoxAdapter;
@@ -15,7 +16,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
 
-public class AgregarCarreraArea extends JInternalFrame {
+public class CarreraAreaSeleccionado extends JInternalFrame {
 	private JPanel pp = new JPanel();
 	private JPanel pt = new JPanel();
 	private JLabel lblClave = new JLabel("Clave");
@@ -28,7 +29,8 @@ public class AgregarCarreraArea extends JInternalFrame {
 	private JTextArea txtDescripcion = new JTextArea();
 	private JScrollPane scrollPane = new JScrollPane(txtDescripcion);
 	private JComboBox<String> cboTipo = new JComboBox<>();
-	private JButton btnGuardar = new JButton();
+	private JButton btnEditar = new JButton();
+	private JButton btnEliminar = new JButton();
 	private JButton btnVolver = new JButton();
 
 	//Iconos para JOptionPanel
@@ -39,12 +41,22 @@ public class AgregarCarreraArea extends JInternalFrame {
 	private ImageIcon informacion = new ImageIcon("src/main/resources/Iconos/info.png");
 
 	//Variables y objetos.
-	private CarreraArea ca = new CarreraArea();
 	private String[] usuario;
+	private String clave = null;
+	private CarreraArea ca = new CarreraArea();
+	private Object[] datoCA;
 
-	public AgregarCarreraArea(String[] usuario) {
+	public CarreraAreaSeleccionado(String[] usuario, String clave) {
 		initComponents();
+		deshabilitar();
 		this.usuario = usuario;
+		this.clave = clave;
+		txtClave.setText(clave);
+		datoCA = ca.carreraAreaSeleccionar(clave);
+		txtNombre.setText(datoCA[1].toString());
+		txtDescripcion.setText(datoCA[2].toString());
+		txtJefe.setText(datoCA[3].toString());
+		cboTipo.setSelectedItem(datoCA[2].toString());
 	}
 
 	private void initComponents() {
@@ -116,19 +128,26 @@ public class AgregarCarreraArea extends JInternalFrame {
 		pt.add(cboTipo);
 
 		//Propiedades del los botones
-		btnGuardar.setForeground(Color.BLACK);
-		btnGuardar.setFont(new Font("Segoe UI Symbol", Font.BOLD, 14));
-		btnGuardar.setText("Guardar");
-		btnGuardar.setIcon(new ImageIcon("src/main/resources/Iconos/guardar.png"));
-		btnGuardar.setBorder(BorderFactory.createLineBorder(new Color(171, 235, 198), 2, Boolean.FALSE));
-		btnGuardar.setBounds(90, 300, 150, 50);
-		pp.add(btnGuardar);
+		btnEditar.setForeground(Color.BLACK);
+		btnEditar.setFont(new Font("Segoe UI Symbol", Font.BOLD, 14));
+		btnEditar.setText("Editar");
+		btnEditar.setIcon(new ImageIcon("src/main/resources/Iconos/editar.png"));
+		btnEditar.setBorder(BorderFactory.createLineBorder(new Color(171, 235, 198), 2, Boolean.FALSE));
+		btnEditar.setBounds(15, 300, 150, 50);
+		pp.add(btnEditar);
+		btnEliminar.setForeground(Color.BLACK);
+		btnEliminar.setFont(new Font("Segoe UI Symbol", Font.BOLD, 14));
+		btnEliminar.setText("Eliminar");
+		btnEliminar.setIcon(new ImageIcon("src/main/resources/Iconos/eliminar.png"));
+		btnEliminar.setBorder(BorderFactory.createLineBorder(new Color(174, 214, 241), 2, Boolean.FALSE));
+		btnEliminar.setBounds(208, 300, 150, 50);
+		pp.add(btnEliminar);
 		btnVolver.setForeground(Color.BLACK);
 		btnVolver.setFont(new Font("Segoe UI Symbol", Font.BOLD, 14));
 		btnVolver.setText("Volver");
 		btnVolver.setIcon(new ImageIcon("src/main/resources/Iconos/volver.png"));
 		btnVolver.setBorder(BorderFactory.createLineBorder(new Color(245, 183, 177), 2, Boolean.FALSE));
-		btnVolver.setBounds(320, 300, 150, 50);
+		btnVolver.setBounds(400, 300, 150, 50);
 		pp.add(btnVolver);
 
 		//Propiedades del pt
@@ -192,10 +211,10 @@ public class AgregarCarreraArea extends JInternalFrame {
 				//----------------------------
 			}
 		});
-		btnGuardar.addActionListener(new ActionListener() {
+		btnEditar.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				btnGuardarActionPerformed(e);
+				btnEditarActionPerformed(e);
 			}
 		});
 		btnVolver.addActionListener(new ActionListener() {
@@ -204,70 +223,115 @@ public class AgregarCarreraArea extends JInternalFrame {
 				btnVolverActionPerformed(e);
 			}
 		});
+		btnEliminar.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				btnEliminarActionPerformed(e);
+			}
+		});
+	}
+
+	private void deshabilitar() {
+		txtClave.setEnabled(Boolean.FALSE);
+		txtNombre.setEnabled(Boolean.FALSE);
+		txtDescripcion.setEnabled(Boolean.FALSE);
+		txtJefe.setEnabled(Boolean.FALSE);
+		cboTipo.setEnabled(Boolean.FALSE);
+	}
+
+	private void habilitar() {
+		txtClave.setEnabled(Boolean.FALSE);
+		txtNombre.setEnabled(Boolean.TRUE);
+		txtDescripcion.setEnabled(Boolean.TRUE);
+		txtJefe.setEnabled(Boolean.TRUE);
+		cboTipo.setEnabled(Boolean.TRUE);
 	}
 
 	private void txtClaveKeyPressed(KeyEvent evt) {
 		if (txtClave.getText().length() == 8) {
-			JOptionPane.showInternalMessageDialog(AgregarCarreraArea.this, "Has alcanzado el límite de caracteres permitido.", "Límite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+			JOptionPane.showInternalMessageDialog(CarreraAreaSeleccionado.this, "Has alcanzado el límite de caracteres permitido.", "Límite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
 			txtClave.requestFocus();
 		}
 	}
 
 	private void txtNombreKeyPressed(KeyEvent evt) {
 		if (txtNombre.getText().length() == 60) {
-			JOptionPane.showInternalMessageDialog(AgregarCarreraArea.this, "Has alcanzado el límite de caracteres permitido.", "Límite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+			JOptionPane.showInternalMessageDialog(CarreraAreaSeleccionado.this, "Has alcanzado el límite de caracteres permitido.", "Límite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
 			txtNombre.requestFocus();
 		}
 	}
 
 	private void txtJefeKeyPressed(KeyEvent evt) {
 		if (txtJefe.getText().length() == 60) {
-			JOptionPane.showInternalMessageDialog(AgregarCarreraArea.this, "Has alcanzado el límite de caracteres permitido.", "Límite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+			JOptionPane.showInternalMessageDialog(CarreraAreaSeleccionado.this, "Has alcanzado el límite de caracteres permitido.", "Límite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
 			txtJefe.requestFocus();
 		}
 	}
 
-	public void btnGuardarActionPerformed(ActionEvent evt) {
-		String clave = txtClave.getText();
-		String nombre = txtNombre.getText();
-		String descripcion = txtDescripcion.getText();
-		String jefe = txtJefe.getText();
-		String tipo = cboTipo.getSelectedItem().toString();
-		if (clave.isEmpty()) {
-			JOptionPane.showInternalMessageDialog(AgregarCarreraArea.this, "El campo clave no puede quedar vacío.", "Campo vacío.", JOptionPane.WARNING_MESSAGE, warning);
-			txtClave.requestFocus();
-		} else if (nombre.isEmpty()) {
-			JOptionPane.showInternalMessageDialog(AgregarCarreraArea.this, "El campo nombre completo no puede quedar vacío.", "Campo vacío.", JOptionPane.WARNING_MESSAGE, warning);
-			txtNombre.requestFocus();
-		} else if (descripcion.isEmpty()) {
-			JOptionPane.showInternalMessageDialog(AgregarCarreraArea.this, "Debes escribir una descripción.", "Campo vacío.", JOptionPane.WARNING_MESSAGE, warning);
-			txtDescripcion.requestFocus();
-		} else if (jefe.isEmpty()) {
-			JOptionPane.showInternalMessageDialog(AgregarCarreraArea.this, "El campo nombre del jéfe o director no puede quedar vacío.", "Campo vacío.", JOptionPane.WARNING_MESSAGE, warning);
-			txtJefe.requestFocus();
-		} else if (tipo.equals("Seleccione una opción")) {
-			JOptionPane.showInternalMessageDialog(AgregarCarreraArea.this, "Debes seleccionar una opción de la lista desplegable.", "Selección de opción.", JOptionPane.WARNING_MESSAGE, warning);
-			cboTipo.requestFocus();
-		} else if (ca.carreraAreaExiste(clave)) {
-			JOptionPane.showInternalMessageDialog(AgregarCarreraArea.this, nombre + " ya está registrada.", "Dato duplicado.", JOptionPane.WARNING_MESSAGE, warning);
-			txtClave.requestFocus();
-			txtClave.setText("");
-			txtNombre.setText("");
-		} else if (ca.carreraAreaInsertar(clave, nombre, descripcion, jefe, tipo)) {
-			JOptionPane.showInternalMessageDialog(AgregarCarreraArea.this, "El registro se ejecutó correctamente.", "Registro correcto.", JOptionPane.INFORMATION_MESSAGE, exito);
-			txtClave.setText("");
-			txtNombre.setText("");
-			txtDescripcion.setText("");
-			txtJefe.setText("");
-			cboTipo.setSelectedIndex(0);
-			txtClave.requestFocus();
+	private void btnEditarActionPerformed(ActionEvent evt) {
+		if (btnEditar.getText().equals("Editar")) {
+			habilitar();
+			btnEliminar.setEnabled(Boolean.FALSE);
+			btnEditar.setText("Guardar");
+			btnEditar.setIcon(new ImageIcon("src/main/resources/Iconos/guardar.png"));
 		} else {
-			JOptionPane.showInternalMessageDialog(AgregarCarreraArea.this, "El registro no se ejecutó, debido a un error de comunicación con la base de datos. Esta ventana se cerrará.", "Error de comunicación.", JOptionPane.ERROR_MESSAGE, error);
+			String nombre = txtNombre.getText();
+			String descripcion = txtDescripcion.getText();
+			String jefe = txtJefe.getText();
+			String tipo = cboTipo.getSelectedItem().toString();
+			if (clave.isEmpty()) {
+				JOptionPane.showInternalMessageDialog(CarreraAreaSeleccionado.this, "El campo clave no puede quedar vacío.", "Campo vacío.", JOptionPane.WARNING_MESSAGE, warning);
+				txtClave.requestFocus();
+			} else if (nombre.isEmpty()) {
+				JOptionPane.showInternalMessageDialog(CarreraAreaSeleccionado.this, "El campo nombre completo no puede quedar vacío.", "Campo vacío.", JOptionPane.WARNING_MESSAGE, warning);
+				txtNombre.requestFocus();
+			} else if (descripcion.isEmpty()) {
+				JOptionPane.showInternalMessageDialog(CarreraAreaSeleccionado.this, "Debes escribir una descripción.", "Campo vacío.", JOptionPane.WARNING_MESSAGE, warning);
+				txtDescripcion.requestFocus();
+			} else if (jefe.isEmpty()) {
+				JOptionPane.showInternalMessageDialog(CarreraAreaSeleccionado.this, "El campo nombre del jéfe o director no puede quedar vacío.", "Campo vacío.", JOptionPane.WARNING_MESSAGE, warning);
+				txtJefe.requestFocus();
+			} else if (tipo.equals("Seleccione una opción")) {
+				JOptionPane.showInternalMessageDialog(CarreraAreaSeleccionado.this, "Debes seleccionar una opción de la lista desplegable.", "Selección de opción.", JOptionPane.WARNING_MESSAGE, warning);
+				cboTipo.requestFocus();
+			} else if (ca.carreraAreaModificar(clave, nombre, descripcion, jefe, tipo)) {
+				JOptionPane.showInternalMessageDialog(CarreraAreaSeleccionado.this, "La modificación se ejecutó correctamente.", "Modificación correcta. - SiRiUS.", JOptionPane.INFORMATION_MESSAGE, exito);
+				abrirListadoCA(usuario);
+				dispose();
+			} else {
+				JOptionPane.showInternalMessageDialog(CarreraAreaSeleccionado.this, "La modificación no se ejecutó, debido a un error de comunicación con la base de datos. Esta ventana se cerrará.", "Error de comunicación. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
+				this.dispose();
+			}
+		}
+	}
+
+	private void btnEliminarActionPerformed(ActionEvent evt) {
+		int res = JOptionPane.showInternalConfirmDialog(CarreraAreaSeleccionado.this, "¿Realmente deseas eliminar este registro?", "Confirmar elimincación. - SiRiUS.", JOptionPane.YES_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
+		if (res == JOptionPane.YES_OPTION) {
+			if (ca.carreraAreaEliminado(clave)) {
+				JOptionPane.showInternalMessageDialog(CarreraAreaSeleccionado.this, "La eliminación se ejecutó correctamente.", "Eliminación correcta. - SiRiUS.", JOptionPane.INFORMATION_MESSAGE, exito);
+				abrirListadoCA(usuario);
+				dispose();
+			}
 		}
 	}
 
 	private void btnVolverActionPerformed(ActionEvent evt) {
-		//Abrir listado
+		abrirListadoCA(usuario);
 		this.dispose();
+	}
+
+	private String[] abrirListadoCA(String[] usuario) {
+		ListadoCarreraArea lca = new ListadoCarreraArea(usuario);
+		int x = (VentanaPrincipal.escritorio.getWidth() / 2) - lca.getWidth() / 2;
+		int y = (VentanaPrincipal.escritorio.getHeight() / 2) - lca.getHeight() / 2;
+		if (lca.isShowing()) {
+			lca.setLocation(x, y);
+		} else {
+			VentanaPrincipal.escritorio.add(lca);
+			lca.setLocation(x, y);
+			lca.show();
+		}
+		return usuario;
 	}
 }

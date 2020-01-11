@@ -5,8 +5,11 @@
  */
 package MySQL;
 
-import Conexion.*;
-import java.sql.*;
+import Conexion.Conexion;
+
+import java.sql.CallableStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  *
@@ -20,12 +23,13 @@ public class CarreraArea extends Conexion {
     private CallableStatement proc;
 
     /**
-     *
      * @param clave
+     *
      * @return
+     *
      * @throws ClassNotFoundException
      */
-    public boolean carreraAreaExiste(String clave) throws ClassNotFoundException {
+    public boolean carreraAreaExiste(String clave) {
         boolean existe = false;
         try {
             if (conectar()) {
@@ -113,13 +117,14 @@ public class CarreraArea extends Conexion {
     }
 
     /**
-     *
      * @param dato
      * @param filtro
+     *
      * @return
+     *
      * @throws ClassNotFoundException
      */
-    public int carreraAreaContarBuscado(String dato, String filtro) throws ClassNotFoundException {
+    public int carreraAreaContarBuscado(String dato, String filtro) {
         int cantidad = 0;
         try {
             if (conectar()) {
@@ -147,13 +152,14 @@ public class CarreraArea extends Conexion {
     }
 
     /**
-     *
      * @param dato
      * @param filtro
+     *
      * @return
+     *
      * @throws ClassNotFoundException
      */
-    public Object[][] carreraAreaBuscar(String dato, String filtro) throws ClassNotFoundException {
+    public Object[][] carreraAreaBuscar(String dato, String filtro) {
         Object[][] datos = new Object[carreraAreaContarBuscado(dato, filtro)][campos];
         try {
             if (conectar()) {
@@ -185,12 +191,13 @@ public class CarreraArea extends Conexion {
     }
 
     /**
-     *
      * @param clave
+     *
      * @return
+     *
      * @throws ClassNotFoundException
      */
-    public Object[] carreraAreaSeleccionar(String clave) throws ClassNotFoundException {
+    public Object[] carreraAreaSeleccionar(String clave) {
         Object[] dato = new Object[campos + 1];
         try {
             if (conectar()) {
@@ -214,16 +221,17 @@ public class CarreraArea extends Conexion {
     }
 
     /**
-     *
      * @param clave
      * @param nombre
      * @param descripcion
      * @param jefe
      * @param tipo
+     *
      * @return
+     *
      * @throws ClassNotFoundException
      */
-    public boolean carreraAreaInsertar(String clave, String nombre, String descripcion, String jefe, String tipo) throws ClassNotFoundException {
+    public boolean carreraAreaInsertar(String clave, String nombre, String descripcion, String jefe, String tipo) {
         boolean insertado = Boolean.TRUE;
         try {
             if (conectar()) {
@@ -246,12 +254,13 @@ public class CarreraArea extends Conexion {
     }
 
     /**
-     *
      * @param clave
+     *
      * @return
+     *
      * @throws ClassNotFoundException
      */
-    public boolean carreraAreaEliminado(String clave) throws ClassNotFoundException {
+    public boolean carreraAreaEliminado(String clave) {
         boolean eliminado = Boolean.FALSE;
         try {
             if (conectar()) {
@@ -267,5 +276,27 @@ public class CarreraArea extends Conexion {
             System.out.println("Error en la función carreraAreaEliminado: " + ex);
         }
         return eliminado;
+    }
+
+    public boolean carreraAreaModificar(String clave, String nombre, String descripcion, String jefe, String tipo) {
+        boolean modificado = Boolean.FALSE;
+        try {
+            if (conectar()) {
+                proc = getConn().prepareCall("{CALL carreraAreaModificar(?, ?, ?, ?, ?)}");
+                proc.setString("paramClave", clave);
+                proc.setString("paramNombre", nombre);
+                proc.setString("paramDescripcion", descripcion);
+                proc.setString("paramJefe", jefe);
+                proc.setString("paramTipo", tipo);
+                proc.executeUpdate();
+                modificado = Boolean.TRUE;
+                System.out.println(modificado);
+                proc.close();
+                desconectar();
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error en la función carreraAreaModificar: " + ex);
+        }
+        return modificado;
     }
 }

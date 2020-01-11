@@ -3,6 +3,7 @@ package Interfaces.Inicio;
 import Interfaces.Administrador.AgregarAdministrador;
 import Interfaces.Administrador.ListadoAdministrador;
 import Interfaces.CarreraArea.AgregarCarreraArea;
+import Interfaces.CarreraArea.ListadoCarreraArea;
 import Interfaces.TipoAdministrador.AgregarTipoAdministrador;
 import Interfaces.TipoAdministrador.ListadoTipoAdministrador;
 
@@ -329,6 +330,12 @@ public class VentanaPrincipal extends JFrame implements Runnable {
 				itemAgregarCarreraActionPerformed(e);
 			}
 		});
+		itemListadoCarrera.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				itemListadoCarreraActionPerformed(e);
+			}
+		});
 	}
 
 	private void confirmarCierre() {
@@ -417,6 +424,19 @@ public class VentanaPrincipal extends JFrame implements Runnable {
 			escritorio.add(aca);
 			aca.setLocation(x, y);
 			aca.show();
+		}
+	}
+
+	private void itemListadoCarreraActionPerformed(ActionEvent evt) {
+		ListadoCarreraArea lca = new ListadoCarreraArea(administrador);
+		int x = (escritorio.getWidth() / 2) - lca.getWidth() / 2;
+		int y = (escritorio.getHeight() / 2) - lca.getHeight() / 2;
+		if (lca.isShowing()) {
+			lca.setLocation(x, y);
+		} else {
+			escritorio.add(lca);
+			lca.setLocation(x, y);
+			lca.show();
 		}
 	}
 
