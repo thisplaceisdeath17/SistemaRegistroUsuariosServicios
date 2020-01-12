@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c76f2343-7007-4ca8-a773-2a2dbf32f916" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/CarreraArea/CarreraAreaSeleccionado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/CarreraArea/ListadoCarreraArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/AgregarComunidad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Metodo/Metodo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Iconos/archivo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Iconos/camara.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Iconos/no_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Iconos/opciones.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Iconos/sugerencia.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/CarreraArea/AgregarCarreraArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/CarreraArea/AgregarCarreraArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/AgregarComunidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/AgregarComunidad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Inicio/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Inicio/VentanaPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MySQL/CarreraArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MySQL/CarreraArea.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578710296711</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Se termino modulo de CarreraArea y se modifico la clase CarreraArea Commit desde IntelliJ.">
+      <created>1578786112976</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578786112976</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -144,7 +153,8 @@
     <MESSAGE value="Se agrego la interfaz listado y seleccion del modulo Administrador. Tambien se cambio el laf. Commit desde IntelliJ." />
     <MESSAGE value="Se termino modulo de administrador, con algunas validaciones extras. Se completo el modulo de tipo administrador y se inicio con el modulo de carreras, con la creacion de una interfaz para el registro del las mismas. Commit desde IntelliJ." />
     <MESSAGE value="Se comenzo con la interfaz de AgregarCarreraArea. Commit desde IntelliJ." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se comenzo con la interfaz de AgregarCarreraArea. Commit desde IntelliJ." />
+    <MESSAGE value="Se termino modulo de CarreraArea y se modifico la clase CarreraArea Commit desde IntelliJ." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se termino modulo de CarreraArea y se modifico la clase CarreraArea Commit desde IntelliJ." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -153,10 +163,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="46" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1578510642115" />
-    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser" timestamp="1578782233649">
+    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser" timestamp="1578865428535">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1578782233649" />
+    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1578865428535" />
     <state x="370" y="314" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1578710229811">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -165,42 +175,42 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="484" y="253" width="398" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.768@0.0.1366.768" timestamp="1578343397790" />
-    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2" timestamp="1578710294630">
+    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2" timestamp="1578786110013">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578710294630" />
+    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578786110013" />
     <state x="485" y="128" key="FileChooserDialogImpl" timestamp="1578688432431">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="485" y="128" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1578688432431" />
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1578785909566">
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1578868175226">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1578785909566" />
-    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1578785909566">
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1578868175226" />
+    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1578868175226">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1578785909566" />
-    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1578785909566">
+    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1578868175226" />
+    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1578868175226">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1578785909566" />
-    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1578785909566">
+    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1578868175226" />
+    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1578868175226">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1578785909566" />
+    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1578868175226" />
     <state x="195" y="0" width="998" height="708" key="SettingsEditor" timestamp="1578772773020">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="195" y="0" width="998" height="708" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1578772773020" />
-    <state x="275" y="120" key="Vcs.Push.Dialog.v2" timestamp="1578710324032">
+    <state x="275" y="120" key="Vcs.Push.Dialog.v2" timestamp="1578786138473">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="120" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1578710324032" />
-    <state x="391" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1578772762062">
+    <state x="275" y="120" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1578786138473" />
+    <state x="391" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1578855039419">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="391" y="212" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1578772762062" />
+    <state x="391" y="212" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1578855039419" />
     <state x="298" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578521198629">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -209,10 +219,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="494" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1578511620222" />
-    <state x="271" y="188" key="git4idea.merge.GitPullDialog" timestamp="1578710311154">
+    <state x="271" y="188" key="git4idea.merge.GitPullDialog" timestamp="1578786123452">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="271" y="188" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1578710311154" />
+    <state x="271" y="188" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1578786123452" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1578348510838">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
