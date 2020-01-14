@@ -1,9 +1,9 @@
 package Archivos;
 
-import java.io.*;
-import javax.swing.JOptionPane;
-
 import Log.Log;
+
+import javax.swing.*;
+import java.io.*;
 
 /**
  * The type Archivos.
@@ -59,8 +59,8 @@ public class Archivos {
             out.close();
             copiado = true;
         } catch (IOException ex) {
-            JOptionPane.showMessageDialog(null, "Error en la función tipoAdministradorExiste. Revise el archivo Log para más información.", "Error de Ejecución de Función.", JOptionPane.ERROR_MESSAGE);
-            Log.writeLog(path, "Error en la función tipoAdministradorExiste: " + ex);
+            JOptionPane.showMessageDialog(null, "Error en la función copiarArchivos. Revise el archivo Log para más información.", "Error de Ejecución de la función copiarArchivos.", JOptionPane.ERROR_MESSAGE);
+            Log.writeLog(path, "Error en la función copiarArchivos: " + ex);
         }
         return copiado;
     }

@@ -5,6 +5,7 @@ import Interfaces.Administrador.ListadoAdministrador;
 import Interfaces.CarreraArea.AgregarCarreraArea;
 import Interfaces.CarreraArea.ListadoCarreraArea;
 import Interfaces.Comunidad.AgregarComunidad;
+import Interfaces.Comunidad.ListadoComunidad;
 import Interfaces.TipoAdministrador.AgregarTipoAdministrador;
 import Interfaces.TipoAdministrador.ListadoTipoAdministrador;
 
@@ -343,6 +344,12 @@ public class VentanaPrincipal extends JFrame implements Runnable {
 				itemAgregarComunidadActionPerformed(e);
 			}
 		});
+		itemListadoComunidad.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				itemListadoComunidadActionPerformed(e);
+			}
+		});
 	}
 
 	private void confirmarCierre() {
@@ -450,6 +457,12 @@ public class VentanaPrincipal extends JFrame implements Runnable {
 	private void itemAgregarComunidadActionPerformed(ActionEvent evt) {
 		AgregarComunidad ac = new AgregarComunidad(administrador);
 		ac.setVisible(Boolean.TRUE);
+	}
+
+	private void itemListadoComunidadActionPerformed(ActionEvent evt) {
+		ListadoComunidad lc = new ListadoComunidad(administrador);
+		lc.setLocationRelativeTo(null);
+		lc.setVisible(Boolean.TRUE);
 	}
 
 	public void hora() {

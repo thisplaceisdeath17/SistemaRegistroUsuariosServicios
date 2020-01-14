@@ -48,3 +48,11 @@ dic 12, 2019 12:37:41 P. M. Log.Log writeLog
 INFO: Error de conexión con la base de datos: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+ene. 13, 2020 2:45:48 P. M. Log.Log writeLog
+INFO: Error en la funciÃ³n tipoAdministradorExiste: java.io.FileNotFoundException: C:\Users\roule\IdeaProjects\SiRiUSv3.0src\main\java\Fotografias\Comunidad\201321198.jpg (El sistema no puede encontrar la ruta especificada)
+ene. 13, 2020 2:50:04 P. M. Log.Log writeLog
+INFO: Error en la funciÃ³n tipoAdministradorExiste: java.io.FileNotFoundException: C:\Users\roule\IdeaProjects\SiRiUSv3.0src\main\resources\Fotografias\Comunidad\201321198.jpg (El sistema no puede encontrar la ruta especificada)
+ene. 13, 2020 6:09:13 P. M. Log.Log writeLog
+INFO: Error en la función copiarArchivos: java.io.FileNotFoundException: C:\Users\roule\IdeaProjects\SiRiUSv3.0src\main\java\Fotografias\Comunidad\201321198.jpg (El sistema no puede encontrar la ruta especificada)
+ene. 13, 2020 6:21:35 P. M. Log.Log writeLog
+INFO: Error en la función copiarArchivos: java.io.FileNotFoundException: C:\Users\roule\IdeaProjects\SiRiUSv3.0\src\main\java\Fotografias\Comunidad\201321198.jpg (El sistema no puede encontrar la ruta especificada)
