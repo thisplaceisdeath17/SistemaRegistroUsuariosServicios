@@ -17,6 +17,6 @@ public class Main {
             System.out.println("Error al mostrar Look and Feel: " + ex);
         }
         InicioSesion is = new InicioSesion();
-        is.setVisible(true);
+        is.setVisible(Boolean.TRUE);
     }
 }

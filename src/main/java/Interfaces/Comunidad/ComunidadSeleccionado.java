@@ -309,6 +309,7 @@ public class ComunidadSeleccionado extends JFrame {
 	}
 
 	private void deshabilitar() {
+		btnMetodo.setEnabled(Boolean.FALSE);
 		txtMatricula.setEnabled(Boolean.FALSE);
 		txtNombre.setEnabled(Boolean.FALSE);
 		txtRFID.setEnabled(Boolean.FALSE);
@@ -378,6 +379,7 @@ public class ComunidadSeleccionado extends JFrame {
 		if (btnEditar.getText().equals("Editar")) {
 			habilitar();
 			btnEliminar.setEnabled(Boolean.FALSE);
+			btnMetodo.setEnabled(Boolean.TRUE);
 			btnEditar.setText("Guardar");
 			btnEditar.setIcon(new ImageIcon("src/main/resources/Iconos/guardar.png"));
 		} else {

@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/src/main/java/Interfaces/Administrador/AgregarAdministrador.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/Interfaces/Inicio/InicioSesion.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/Interfaces/Inicio/VentanaPrincipal.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Interfaces/Servicios/AgregarServicios.java" charset="UTF-8" />
   </component>
 </project>

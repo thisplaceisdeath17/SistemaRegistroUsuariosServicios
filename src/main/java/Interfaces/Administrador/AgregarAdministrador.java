@@ -5,6 +5,7 @@
  */
 package Interfaces.Administrador;
 
+import Interfaces.Inicio.VentanaPrincipal;
 import MySQL.Administrador;
 import MySQL.CarreraArea;
 import MySQL.TipoAdministrador;
@@ -31,8 +32,8 @@ public class AgregarAdministrador extends JInternalFrame {
     private JSeparator sp = new JSeparator(SwingConstants.VERTICAL);
     private JLabel lblLogin = new JLabel("Nombre de Usuario");
     private JLabel lblNombre = new JLabel("Nombre Completo");
-    private JLabel lblPassword = new JLabel("Contrase�a");
-    private JLabel lblConfPassword = new JLabel("Confirmar Contrase�a");
+    private JLabel lblPassword = new JLabel("Contraseña");
+    private JLabel lblConfPassword = new JLabel("Confirmar Contraseña");
     private JTextField txtLogin = new JTextField();
     private JTextField txtNombre = new JTextField();
     private JPasswordField txtPassword = new JPasswordField();
@@ -55,6 +56,7 @@ public class AgregarAdministrador extends JInternalFrame {
     private String[] usuario;
     private Object[][] datosCA;
     private Object[][] datosTA;
+    private String path = "src/main/java/Log/Log.txt";
 
     public AgregarAdministrador(String[] usuario) {
         initComponents();
@@ -113,7 +115,7 @@ public class AgregarAdministrador extends JInternalFrame {
         //Panel de carrera
         pca.setLayout(null);
         pca.setBackground(new Color(242, 245, 242));
-        pca.setBorder(BorderFactory.createTitledBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null), "Seleccione Carrera o �rea", TitledBorder.LEFT, TitledBorder.ABOVE_TOP, new Font("Segoe UI Symbol", Font.BOLD, 12), Color.BLACK));
+        pca.setBorder(BorderFactory.createTitledBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null), "Seleccione Carrera o Área", TitledBorder.LEFT, TitledBorder.ABOVE_TOP, new Font("Segoe UI Symbol", Font.BOLD, 12), Color.BLACK));
         pca.setBounds(310, 40, 275, 90);
         pp.add(pca);
 
@@ -251,7 +253,7 @@ public class AgregarAdministrador extends JInternalFrame {
 
     private void txtLoginKeyPressed(KeyEvent evt) {
         if (txtLogin.getText().length() == 15) {
-            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "Has alcanzado el l�mite de caracteres permitido.", "L�mite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "Has alcanzado el límite de caracteres permitido.", "Límite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
             txtLogin.requestFocus();
             evt.consume();
         }
@@ -259,7 +261,7 @@ public class AgregarAdministrador extends JInternalFrame {
 
     private void txtNombreKeyPressed(KeyEvent evt) {
         if (txtNombre.getText().length() == 60) {
-            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "Has alcanzado el l�mite de caracteres permitido.", "L�mite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "Has alcanzado el límite de caracteres permitido.", "Límite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
             txtNombre.requestFocus();
             evt.consume();
         }
@@ -267,7 +269,7 @@ public class AgregarAdministrador extends JInternalFrame {
 
     private void txtPasswordKeyPressed(KeyEvent evt) {
         if (txtPassword.getText().length() == 15) {
-            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "Has alcanzado el l�mite de caracteres permitido.", "L�mite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "Has alcanzado el límite de caracteres permitido.", "Límite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
             txtPassword.requestFocus();
             evt.consume();
         }
@@ -275,7 +277,7 @@ public class AgregarAdministrador extends JInternalFrame {
 
     private void txtConfPasswordKeyPressed(KeyEvent evt) {
         if (txtConfPassword.getText().length() == 15) {
-            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "Has alcanzado el l�mite de caracteres permitido.", "L�mite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "Has alcanzado el límite de caracteres permitido.", "Límite Alcanzado. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
             txtConfPassword.requestFocus();
             evt.consume();
         }
@@ -301,19 +303,19 @@ public class AgregarAdministrador extends JInternalFrame {
         String carrera = datosCA[cboCarrera.getSelectedIndex()][0].toString();
         String tipo = datosTA[cboTipo.getSelectedIndex()][0].toString();
         if (login.isEmpty()) {
-            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "El campo nombre de usuario no puede quedar vac�o.", "Campo vac�o. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "El campo nombre de usuario no puede quedar vacío.", "Campo vacío. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
             txtLogin.requestFocus();
         } else if (nombre.isEmpty()) {
-            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "El campo nombre completo no puede quedar vac�o.", "Campo vac�o. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "El campo nombre completo no puede quedar vacío.", "Campo vacío. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
             txtNombre.requestFocus();
         } else if (password.isEmpty()) {
-            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "El campo contrase�a no puede quedar vac�o.", "Campo vac�o. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "El campo contraseña no puede quedar vacío.", "Campo vacío. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
             txtPassword.requestFocus();
         } else if (confPassword.isEmpty()) {
-            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "El campo confirmar contrase�a no puede quedar vac�o.", "Campo vac�o. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "El campo confirmar contraseña no puede quedar vacío.", "Campo vacío. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
             txtConfPassword.requestFocus();
         } else if (!password.equals(confPassword)) {
-            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "Las contrase�as no coinciden, revise de nuevo.", "Contrase�as incorrectas. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "Las contraseñas no coinciden, revise de nuevo.", "Contraseñas incorrectas. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
             txtPassword.requestFocus();
             txtConfPassword.setText("");
         } else if (a.administradorExiste(login)) {
@@ -321,7 +323,7 @@ public class AgregarAdministrador extends JInternalFrame {
             txtLogin.setText("");
             txtLogin.requestFocus();
         } else if (a.administradorInsertar(login, nombre, password, carrera, tipo)) {
-            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, nombre + " se ha registro correctamente.", "Registro correcto. - SiRiUS.", JOptionPane.INFORMATION_MESSAGE, exito);
+            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "El registro se ejecutó correctamente.", "Registro correcto. - SiRiUS.", JOptionPane.INFORMATION_MESSAGE, exito);
             txtLogin.setText("");
             txtNombre.setText("");
             txtPassword.setText("");
@@ -332,12 +334,21 @@ public class AgregarAdministrador extends JInternalFrame {
             cboTipo.setSelectedIndex(0);
             txtLogin.requestFocus();
         } else {
-            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "El registro no se llevo a cabo, debido a un error de comunicaci�n con la base de datos. Esta ventana se cerrar�.", "Error de comunicaci�n. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
+            JOptionPane.showInternalMessageDialog(AgregarAdministrador.this, "El registro no se llevo a cabo, debido a un error de comunicación con la base de datos. Esta ventana se cerrará.", "Error de comunicación. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
             this.dispose();
         }
     }
     private void btnVolverActionPerformed(ActionEvent evt) {
-        //Abrir listado
+        ListadoAdministrador la = new ListadoAdministrador(usuario);
+        int x = (VentanaPrincipal.escritorio.getWidth() / 2) - la.getWidth() / 2;
+        int y = (VentanaPrincipal.escritorio.getHeight() / 2) - la.getHeight() / 2;
+        if (la.isShowing()) {
+            la.setLocation(x, y);
+        } else {
+            VentanaPrincipal.escritorio.add(la);
+            la.setLocation(x, y);
+            la.show();
+        }
         this.dispose();
     }
 }

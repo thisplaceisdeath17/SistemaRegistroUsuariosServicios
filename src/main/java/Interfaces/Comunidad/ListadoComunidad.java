@@ -116,6 +116,7 @@ public class ListadoComunidad extends JFrame {
 		this.setTitle(".: Listado de Carrera y Áreas. - SiRiUS. :.");
 		this.setIconImage(new ImageIcon("src/main/resources/Iconos/logo.png").getImage());
 		this.add(pp);
+		this.setLocationRelativeTo(null);
 
 		//Eventos de componentes
 		txtBusqueda.addKeyListener(new KeyListener() {

@@ -19,8 +19,8 @@ public class Archivos {
      * Borrar temporales.
      */
     public void borrarTemporales() {
-        File file = new File(new File("").getAbsolutePath() + "src/main/java/Temporales/");
-        String direccion = file.getAbsolutePath();
+        File file = new File(new File("").getAbsolutePath() + "/src/main/resources/Fotografias/Temporales/");
+	    String direccion = file.getAbsolutePath();
         File directorio = new File(direccion);
         File f;
         if (directorio.isDirectory()) {
@@ -47,9 +47,11 @@ public class Archivos {
         boolean copiado = false;
         File archivoOrigen = new File(origen);
         File archivoDestino = new File(destino);
+	    System.out.println(origen + "|" + destino);
         try {
             InputStream in = new FileInputStream(archivoOrigen);
             OutputStream out = new FileOutputStream(archivoDestino);
+	        System.out.println(archivoOrigen + "|" + archivoDestino);
             byte[] buf = new byte[1024];
             int len;
             while ((len = in.read(buf)) > 0) {
@@ -59,8 +61,9 @@ public class Archivos {
             out.close();
             copiado = true;
         } catch (IOException ex) {
-            JOptionPane.showMessageDialog(null, "Error en la función copiarArchivos. Revise el archivo Log para más información.", "Error de Ejecución de la función copiarArchivos.", JOptionPane.ERROR_MESSAGE);
-            Log.writeLog(path, "Error en la función copiarArchivos: " + ex);
+	        JOptionPane.showMessageDialog(null, "Error en la función copiarArchivos. Revise el archivo Log para más información.", "Error de Ejecución de la función copiarArchivos.", JOptionPane.ERROR_MESSAGE);
+	        ex.printStackTrace();
+	        Log.writeLog(path, "Error en la función copiarArchivos: " + ex);
         }
         return copiado;
     }

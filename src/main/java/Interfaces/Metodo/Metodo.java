@@ -2,6 +2,8 @@ package Interfaces.Metodo;
 
 import Interfaces.Comunidad.AgregarComunidad;
 import Interfaces.Comunidad.ComunidadSeleccionado;
+import Interfaces.Servicios.AgregarServicios;
+import Interfaces.Servicios.ServicioSeleccionado;
 import com.github.sarxos.webcam.Webcam;
 import com.github.sarxos.webcam.WebcamPanel;
 import com.github.sarxos.webcam.WebcamResolution;
@@ -16,6 +18,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class Metodo extends JDialog {
+
 	private JPanel pp = new JPanel();
 	private JLabel lblFotografia = new JLabel();
 	private JButton btnArchivos = new JButton();
@@ -131,11 +134,21 @@ public class Metodo extends JDialog {
 					imagen = new ImageIcon(origen.getPath());
 					imagenScaled = new ImageIcon(imagen.getImage().getScaledInstance(lblFotografia.getWidth(), lblFotografia.getHeight(), Image.SCALE_SMOOTH));
 					lblFotografia.setIcon(imagenScaled);
+				} else if (operacion.equals("AgregarServicios")) {
+					((AgregarServicios) getOwner()).setOrigen(origen);
+					imagen = new ImageIcon(origen.getPath());
+					imagenScaled = new ImageIcon(imagen.getImage().getScaledInstance(lblFotografia.getWidth(), lblFotografia.getHeight(), Image.SCALE_SMOOTH));
+					lblFotografia.setIcon(imagenScaled);
+				} else if (operacion.equals("ServicioSeleccionado")) {
+					((ServicioSeleccionado) getOwner()).setOrigen(origen);
+					imagen = new ImageIcon(origen.getPath());
+					imagenScaled = new ImageIcon(imagen.getImage().getScaledInstance(lblFotografia.getWidth(), lblFotografia.getHeight(), Image.SCALE_SMOOTH));
+					lblFotografia.setIcon(imagenScaled);
 				}
 			} else {
 				this.dispose();
 			}
-		} catch (Exception ex) {
+		} catch (HeadlessException ex) {
 			System.out.println("Error en btnArchivos: " + ex);
 		}
 	}
@@ -168,6 +181,16 @@ public class Metodo extends JDialog {
 					lblFotografia.setIcon(imagenScaled);
 				} else if (operacion.equals("ComunidadSeleccionado")) {
 					((ComunidadSeleccionado) getOwner()).setOrigen(origen);
+					imagen = new ImageIcon(origen.getPath());
+					imagenScaled = new ImageIcon(imagen.getImage().getScaledInstance(lblFotografia.getWidth(), lblFotografia.getHeight(), Image.SCALE_SMOOTH));
+					lblFotografia.setIcon(imagenScaled);
+				} else if (operacion.equals("AgregarServicios")) {
+					((AgregarServicios) getOwner()).setOrigen(origen);
+					imagen = new ImageIcon(origen.getPath());
+					imagenScaled = new ImageIcon(imagen.getImage().getScaledInstance(lblFotografia.getWidth(), lblFotografia.getHeight(), Image.SCALE_SMOOTH));
+					lblFotografia.setIcon(imagenScaled);
+				} else if (operacion.equals("ServicioSeleccionado")) {
+					((ServicioSeleccionado) getOwner()).setOrigen(origen);
 					imagen = new ImageIcon(origen.getPath());
 					imagenScaled = new ImageIcon(imagen.getImage().getScaledInstance(lblFotografia.getWidth(), lblFotografia.getHeight(), Image.SCALE_SMOOTH));
 					lblFotografia.setIcon(imagenScaled);

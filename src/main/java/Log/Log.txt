@@ -56,3 +56,49 @@ ene. 13, 2020 6:09:13 P.聽M. Log.Log writeLog
 INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: C:\Users\roule\IdeaProjects\SiRiUSv3.0src\main\java\Fotografias\Comunidad\201321198.jpg (El sistema no puede encontrar la ruta especificada)
 ene. 13, 2020 6:21:35 P.聽M. Log.Log writeLog
 INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: C:\Users\roule\IdeaProjects\SiRiUSv3.0\src\main\java\Fotografias\Comunidad\201321198.jpg (El sistema no puede encontrar la ruta especificada)
+ene. 15, 2020 12:37:27 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: C:\Users\roule\IdeaProjects\SiRiUSv3.0src\main\java\Fotografia\Servicios\3.png (El sistema no puede encontrar la ruta especificada)
+ene. 15, 2020 12:38:51 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: C:\Users\roule\IdeaProjects\SiRiUSv3.0\src\main\java\Fotografia\Servicios\3.png (El sistema no puede encontrar la ruta especificada)
+ene. 15, 2020 3:08:51 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: 韓dice.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 3:11:33 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: 韓dice.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 3:13:49 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: indice.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 3:15:35 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: Credencial+de+estudiante+universitario.png (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 3:20:22 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: foto-1579123214966.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 3:23:25 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: foto-1579123387044.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 4:12:05 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: indice.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 4:13:56 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: indice.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 4:19:34 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: indice.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 4:20:10 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: indice.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 4:24:40 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: indice.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 4:26:27 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: foto-1579127182836.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 4:29:25 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: 5.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 4:33:35 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: 2.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 4:44:38 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: 2.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 4:51:57 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: 2.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 4:54:20 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: 2.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 5:08:06 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: 2.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 5:13:23 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: Credencial+de+estudiante+universitario.png (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 5:20:27 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: indice.jpg (El sistema no puede encontrar el archivo especificado)
+ene. 15, 2020 5:23:31 P.燤. Log.Log writeLog
+INFO: Error en la funci贸n copiarArchivos: java.io.FileNotFoundException: 2.jpg (El sistema no puede encontrar el archivo especificado)
