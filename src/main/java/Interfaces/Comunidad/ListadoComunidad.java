@@ -1,6 +1,7 @@
 package Interfaces.Comunidad;
 
 import MySQL.Comunidad;
+import Reportes.GenerarReportes;
 import TextPrompt.TextPrompt;
 import com.jgoodies.binding.adapter.ComboBoxAdapter;
 import com.jgoodies.binding.value.ValueHolder;
@@ -14,13 +15,15 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 
-public class ListadoComunidad extends JFrame {
+public class ListadoComunidad extends JInternalFrame {
 	private JPanel pp = new JPanel();
 	private JTextField txtBusqueda = new JTextField();
 	private JLabel lblNumero = new JLabel();
 	private JTable table = new JTable();
 	private JScrollPane scrollPane = new JScrollPane(table);
 	private JComboBox<String> cboFiltro = new JComboBox<>();
+	private JPopupMenu menuContextual = new JPopupMenu();
+	private JMenuItem itemReporte = new JMenuItem();
 
 	//Iconos para JOptionPanel
 	private ImageIcon warning = new ImageIcon("src/main/resources/Iconos/warning.png");
@@ -30,7 +33,7 @@ public class ListadoComunidad extends JFrame {
 
 	//Variables y objetos
 	private String[] usuario;
-	private String[] encabezado = {"Matricula", "Nombre Completo", "Carrera/Área", "Fecha de Registro", "Tipo", "Saldo Total"};
+	private String[] encabezado = {"Matrícula", "Nombre Completo", "Carrera/Área", "Fecha de Registro", "Tipo", "Saldo Total"};
 	private Comunidad c = new Comunidad();
 	private Object[][] datosCom = null;
 	private DefaultTableModel modelo = null;
@@ -64,6 +67,12 @@ public class ListadoComunidad extends JFrame {
 	}
 
 	private void initComponents() {
+		//jpopup
+		menuContextual.add(itemReporte);
+		itemReporte.setForeground(Color.BLACK);
+		itemReporte.setFont(new Font("Segoe UI Symbol", Font.BOLD, 14));
+		itemReporte.setText("Generar Reporte");
+
 		//Propiedades del lbl
 		cantidad = c.comunidadContar("Todos");
 		lblNumero.setText("# de Registros: " + cantidad);
@@ -107,16 +116,17 @@ public class ListadoComunidad extends JFrame {
 		pp.setLayout(null);
 		pp.setBackground(new Color(242, 245, 242));
 		pp.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5, Boolean.FALSE));
-		pp.setBounds(0, 0, 800, 575);
+		pp.setBounds(0, 0, 798, 575);
 
 		//Propiedades del internal frame
 		this.setLayout(null);
-		this.setUndecorated(Boolean.TRUE);
-		this.setSize(800, 576);
+		this.setClosable(Boolean.TRUE);
+		this.setIconifiable(Boolean.FALSE);
+		this.setResizable(Boolean.FALSE);
+		this.setSize(800, 600);
 		this.setTitle(".: Listado de Carrera y Áreas. - SiRiUS. :.");
-		this.setIconImage(new ImageIcon("src/main/resources/Iconos/logo.png").getImage());
+		this.setFrameIcon(new ImageIcon("src/main/resources/Iconos/iconitotese_16.png"));
 		this.add(pp);
-		this.setLocationRelativeTo(null);
 
 		//Eventos de componentes
 		txtBusqueda.addKeyListener(new KeyListener() {
@@ -165,6 +175,12 @@ public class ListadoComunidad extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				cboFiltroActionPerformed(e);
+			}
+		});
+		itemReporte.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				itemReporteActionPerfermed(e);
 			}
 		});
 	}
@@ -233,6 +249,17 @@ public class ListadoComunidad extends JFrame {
 				this.dispose();
 				this.llenarTabla();
 			}
+		}
+		table.setComponentPopupMenu(menuContextual);
+	}
+
+	private void itemReporteActionPerfermed(ActionEvent evt) {
+		if (usuario[2].equals("Super Administrador")) {
+			JOptionPane.showMessageDialog(ListadoComunidad.this, "Debes ser Super Administrador para seleccionar un registro.", "Selección denegada. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+		} else if (itemReporte.isArmed()) {
+			int matricula = (int) table.getValueAt(table.getSelectedRow(), 0);
+			GenerarReportes gr = new GenerarReportes();
+			gr.generarReporte(matricula);
 		}
 	}
 }

@@ -1,5 +1,6 @@
 package Interfaces.Comunidad;
 
+import Interfaces.Inicio.VentanaPrincipal;
 import Interfaces.Metodo.Metodo;
 import MySQL.CarreraArea;
 import MySQL.Comunidad;
@@ -25,7 +26,7 @@ public class ComunidadSeleccionado extends JFrame {
 	private JPanel pf = new JPanel();
 	private JPanel pca = new JPanel();
 	private JPanel pta = new JPanel();
-	private JLabel lblMatricula = new JLabel("Matricula");
+	private JLabel lblMatricula = new JLabel("Matrícula");
 	private JLabel lblNombre = new JLabel("Nombre Completo");
 	private JLabel lblRFID = new JLabel("Número RFID");
 	private JLabel lblSaldo = new JLabel("Saldo ($MXN)");
@@ -116,7 +117,7 @@ public class ComunidadSeleccionado extends JFrame {
 		txtNombre.setHorizontalAlignment(SwingConstants.CENTER);
 		txtNombre.setBounds(15, 120, 300, 30);
 		pp.add(txtNombre);
-		TextPrompt prompt = new TextPrompt("Pasa la tarjeta RFID para registrar.", txtRFID);
+		TextPrompt prompt = new TextPrompt("Pase una tarjeta RFID para registrar.", txtRFID);
 		prompt.setForeground(Color.BLACK);
 		prompt.changeAlpha(0.5f);
 		prompt.changeStyle(Font.BOLD + Font.ITALIC);
@@ -405,8 +406,7 @@ public class ComunidadSeleccionado extends JFrame {
 				lblFotografia.requestFocus();
 			} else if (c.comunidadModificar(matricula, nombre, rfid, carrera, origen, saldo, tipo)) {
 				JOptionPane.showMessageDialog(ComunidadSeleccionado.this, "La modificación se ejecutó correctamente.", "Modificación correcta. - SiRiUS.", JOptionPane.INFORMATION_MESSAGE, exito);
-				ListadoComunidad lc = new ListadoComunidad(usuario);
-				lc.setVisible(Boolean.TRUE);
+				abrirListado(usuario);
 				this.dispose();
 			} else {
 				JOptionPane.showMessageDialog(ComunidadSeleccionado.this, "La modificación no se ejecutó debido a un error de comunicación con la base de datos. Esta ventana se cerrará.", "Error de modificación. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
@@ -420,8 +420,7 @@ public class ComunidadSeleccionado extends JFrame {
 		if (res == JOptionPane.YES_OPTION) {
 			if (c.comunidadEliminar(matricula)) {
 				JOptionPane.showMessageDialog(ComunidadSeleccionado.this, "La eliminación se ejecutó correctamente.", "Eliminación correcta. - SiRiUS.", JOptionPane.INFORMATION_MESSAGE, exito);
-				ListadoComunidad lc = new ListadoComunidad(usuario);
-				lc.setVisible(Boolean.TRUE);
+				abrirListado(usuario);
 				this.dispose();
 			} else {
 				JOptionPane.showMessageDialog(ComunidadSeleccionado.this, "La eliminación no se ejecutó debido a un error de comunicación con la base de datos. Esta ventana se cerrará.", "Error de eliminación. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
@@ -431,8 +430,7 @@ public class ComunidadSeleccionado extends JFrame {
 	}
 
 	private void btnVolverActionPerformed(ActionEvent evt) {
-		ListadoComunidad lc = new ListadoComunidad(usuario);
-		lc.setVisible(Boolean.TRUE);
+		abrirListado(usuario);
 		this.dispose();
 	}
 
@@ -444,5 +442,19 @@ public class ComunidadSeleccionado extends JFrame {
 			ImageIcon imagenScaled = new ImageIcon(imagen.getImage().getScaledInstance(lblFotografia.getWidth(), lblFotografia.getHeight(), Image.SCALE_SMOOTH));
 			lblFotografia.setIcon(imagenScaled);
 		}
+	}
+
+	private String[] abrirListado(String[] usuario) {
+		ListadoComunidad lc = new ListadoComunidad(usuario);
+		int x = (VentanaPrincipal.escritorio.getWidth() / 2) - lc.getWidth() / 2;
+		int y = (VentanaPrincipal.escritorio.getHeight() / 2) - lc.getHeight() / 2;
+		if (lc.isShowing()) {
+			lc.setLocation(x, y);
+		} else {
+			VentanaPrincipal.escritorio.add(lc);
+			lc.setLocation(x, y);
+			lc.show();
+		}
+		return usuario;
 	}
 }

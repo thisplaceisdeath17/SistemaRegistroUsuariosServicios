@@ -1,5 +1,6 @@
 package Interfaces.Comunidad;
 
+import Interfaces.Inicio.VentanaPrincipal;
 import Interfaces.Metodo.Metodo;
 import MySQL.CarreraArea;
 import MySQL.Comunidad;
@@ -25,7 +26,7 @@ public class AgregarComunidad extends JFrame {
 	private JPanel pf = new JPanel();
 	private JPanel pca = new JPanel();
 	private JPanel pta = new JPanel();
-	private JLabel lblMatricula = new JLabel("Matricula");
+	private JLabel lblMatricula = new JLabel("Matrícula");
 	private JLabel lblNombre = new JLabel("Nombre Completo");
 	private JLabel lblRFID = new JLabel("Número RFID");
 	private JLabel lblFotografia = new JLabel();
@@ -301,7 +302,7 @@ public class AgregarComunidad extends JFrame {
 		String carrera = datosCA[cboCarreras.getSelectedIndex()][0].toString();
 		String tipo = cboTipo.getSelectedItem().toString();
 		if (matricula.isEmpty()) {
-			JOptionPane.showMessageDialog(AgregarComunidad.this, "El campo matricula no puede quedar vacío.", "Campo vacío. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+			JOptionPane.showMessageDialog(AgregarComunidad.this, "El campo matrícula no puede quedar vacío.", "Campo vacío. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
 			txtMatricula.requestFocus();
 		} else if (nombre.isEmpty()) {
 			JOptionPane.showMessageDialog(AgregarComunidad.this, "El campo nombre completo no puede quedar vacío.", "Campo vacío. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
@@ -338,7 +339,16 @@ public class AgregarComunidad extends JFrame {
 	}
 
 	private void btnVolverActionPerformed(ActionEvent evt) {
-		//Abrir listado
+		ListadoComunidad lc = new ListadoComunidad(usuario);
+		int x = (VentanaPrincipal.escritorio.getWidth() / 2) - lc.getWidth() / 2;
+		int y = (VentanaPrincipal.escritorio.getHeight() / 2) - lc.getHeight() / 2;
+		if (lc.isShowing()) {
+			lc.setLocation(x, y);
+		} else {
+			VentanaPrincipal.escritorio.add(lc);
+			lc.setLocation(x, y);
+			lc.show();
+		}
 		this.dispose();
 	}
 

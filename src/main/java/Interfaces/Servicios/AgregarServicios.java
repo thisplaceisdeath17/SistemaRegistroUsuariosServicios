@@ -2,7 +2,6 @@ package Interfaces.Servicios;
 
 import Interfaces.Inicio.VentanaPrincipal;
 import Interfaces.Metodo.Metodo;
-import Log.Log;
 import MySQL.CarreraArea;
 import MySQL.Servicios;
 import TextPrompt.TextPrompt;
@@ -59,7 +58,6 @@ public class AgregarServicios extends JFrame {
     private String[] usuario;
     private File origen = null;
     private Object[][] datosCA;
-    private String path = "src/main/java/Log/Log.txt";
 
     public AgregarServicios(String[] usuario) {
         initComponents();
@@ -88,8 +86,7 @@ public class AgregarServicios extends JFrame {
                         txtDias.setText("" + dias);
                     }
                 } catch (Exception ex) {
-                    JOptionPane.showMessageDialog(AgregarServicios.this, "Error en el calculo de las fechas. Para más información, consulte el archivo log.", "Error. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
-                    Log.writeLog(path, "Error en el calculo de las fechas." + ex);
+                    JOptionPane.showMessageDialog(AgregarServicios.this, "Error en el calculo de las fechas.", "Error. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
                 }
             }
         });

@@ -473,9 +473,16 @@ public class VentanaPrincipal extends JFrame implements Runnable {
     }
 
     private void itemListadoComunidadActionPerformed(ActionEvent evt) {
-        ListadoComunidad lc = new ListadoComunidad(administrador);
-        lc.setLocationRelativeTo(null);
-        lc.setVisible(Boolean.TRUE);
+	    ListadoComunidad lc = new ListadoComunidad(administrador);
+	    int x = (escritorio.getWidth() / 2) - lc.getWidth() / 2;
+	    int y = (escritorio.getHeight() / 2) - lc.getHeight() / 2;
+	    if (lc.isShowing()) {
+		    lc.setLocation(x, y);
+	    } else {
+		    escritorio.add(lc);
+		    lc.setLocation(x, y);
+		    lc.show();
+	    }
     }
 
     private void itemAgregarServiciosActionPerformed(ActionEvent evt) {

@@ -2,42 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c76f2343-7007-4ca8-a773-2a2dbf32f916" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nb-configuration.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbactions.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Servicios/AgregarServicios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Servicios/ListadoServicios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Servicios/ServicioSeleccionado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Log/Log.txt.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Log/Log.txt.2.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BD/siriusModel.mwb.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Inicio/SplashScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Reportes/GenerarReportes.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/Fotografias/Comunidad/201321198.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Fotografias/Servicios/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Fotografias/Servicios/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Iconos/servicios_16.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Archivos/Archivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Archivos/Archivos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Administrador/AgregarAdministrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Administrador/AgregarAdministrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Administrador/ListadoAdministrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Administrador/ListadoAdministrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BD/siriusModel.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BD/siriusModel.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/AgregarComunidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/AgregarComunidad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/ComunidadSeleccionado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/ComunidadSeleccionado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/ListadoComunidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/ListadoComunidad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Inicio/InicioSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Inicio/InicioSesion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Inicio/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Inicio/VentanaPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Metodo/Metodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Metodo/Metodo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Log/Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Log/Log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Log/Log.txt.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Log/Log.txt.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Servicios/AgregarServicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Servicios/AgregarServicios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Servicios/ServicioSeleccionado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Servicios/ServicioSeleccionado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MySQL/Comunidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MySQL/Comunidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MySQL/Servicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MySQL/Servicios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Fotografias/Comunidad/201321194.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fotografias/Comunidad/201321194.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fotografias/Temporales/foto-1578942303441.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fotografias/Temporales/foto-1578942887577.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fotografias/Temporales/foto-1578942983458.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fotografias/Temporales/foto-1578943125115.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fotografias/Temporales/foto-1578943746489.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fotografias/Temporales/foto-1578946173780.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fotografias/Temporales/foto-1578948712206.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,10 +60,10 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/Iconos" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Reportes/ReportesJasper" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -184,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578962008679</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Se termino el modulo de servicios, el sistema esta completo, a falta de correcciones ortográficos, la creación del manual de usuario y reportes. Commit desde IntelliJ.">
+      <created>1579135104890</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1579135104890</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -197,7 +185,8 @@
     <MESSAGE value="Se termino modulo de CarreraArea y se modifico la clase CarreraArea Commit desde IntelliJ." />
     <MESSAGE value="Se comenzo con el modulo de la comunidad, terminando la interfaz de registro y los metodos de captura para la fotografia. Commit desde IntelliJ." />
     <MESSAGE value="Se termino el modulo de comunidad, incluyendo la libreria para la captura del imagenes y fotografias. Commit desde IntelliJ." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se termino el modulo de comunidad, incluyendo la libreria para la captura del imagenes y fotografias. Commit desde IntelliJ." />
+    <MESSAGE value="Se termino el modulo de servicios, el sistema esta completo, a falta de correcciones ortográficos, la creación del manual de usuario y reportes. Commit desde IntelliJ." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se termino el modulo de servicios, el sistema esta completo, a falta de correcciones ortográficos, la creación del manual de usuario y reportes. Commit desde IntelliJ." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -206,10 +195,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="46" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1578510642115" />
-    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser" timestamp="1579039494037">
+    <state x="275" y="46" key="#Project_Structure" timestamp="1579208711193">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1579039494037" />
+    <state x="275" y="46" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1579208711193" />
+    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser" timestamp="1579201901814">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1579201901814" />
     <state x="370" y="314" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1578710229811">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -218,30 +211,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="484" y="253" width="398" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.768@0.0.1366.768" timestamp="1578343397790" />
-    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2" timestamp="1578962004853">
+    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2" timestamp="1579135101578">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578962004853" />
-    <state x="485" y="128" key="FileChooserDialogImpl" timestamp="1578688432431">
+    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1579135101578" />
+    <state x="485" y="128" key="FileChooserDialogImpl" timestamp="1579208684974">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="485" y="128" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1578688432431" />
-    <state width="1323" height="113" key="GridCell.Tab.0.bottom" timestamp="1579134354681">
+    <state x="485" y="128" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1579208684974" />
+    <state width="1323" height="249" key="GridCell.Tab.0.bottom" timestamp="1579565083322">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="113" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579134354681" />
-    <state width="1323" height="113" key="GridCell.Tab.0.center" timestamp="1579134354681">
+    <state width="1323" height="249" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579565083322" />
+    <state width="1323" height="249" key="GridCell.Tab.0.center" timestamp="1579565083322">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="113" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1579134354681" />
-    <state width="1323" height="113" key="GridCell.Tab.0.left" timestamp="1579134354681">
+    <state width="1323" height="249" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1579565083322" />
+    <state width="1323" height="249" key="GridCell.Tab.0.left" timestamp="1579565083322">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="113" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1579134354681" />
-    <state width="1323" height="113" key="GridCell.Tab.0.right" timestamp="1579134354681">
+    <state width="1323" height="249" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1579565083322" />
+    <state width="1323" height="249" key="GridCell.Tab.0.right" timestamp="1579565083322">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="113" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1579134354681" />
+    <state width="1323" height="249" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1579565083322" />
     <state width="1323" height="216" key="GridCell.Tab.1.bottom" timestamp="1579043339129">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -258,18 +251,18 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="216" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1579043339129" />
-    <state x="191" y="54" width="998" height="708" key="SettingsEditor" timestamp="1579133116570">
+    <state x="191" y="54" width="998" height="708" key="SettingsEditor" timestamp="1579377623055">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="191" y="54" width="998" height="708" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1579133116570" />
-    <state x="275" y="120" key="Vcs.Push.Dialog.v2" timestamp="1578962040512">
+    <state x="191" y="54" width="998" height="708" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1579377623055" />
+    <state x="275" y="120" key="Vcs.Push.Dialog.v2" timestamp="1579135142498">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="120" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1578962040512" />
-    <state x="391" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1579133144566">
+    <state x="275" y="120" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1579135142498" />
+    <state x="391" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1579546512045">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="391" y="212" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1579133144566" />
+    <state x="391" y="212" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1579546512045" />
     <state x="298" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578521198629">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -278,17 +271,17 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="494" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1578511620222" />
-    <state x="271" y="188" key="git4idea.merge.GitPullDialog" timestamp="1578962026319">
+    <state x="271" y="188" key="git4idea.merge.GitPullDialog" timestamp="1579135128421">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="271" y="188" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1578962026319" />
+    <state x="271" y="188" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1579135128421" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1579042070511">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1579042070511" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1578611248256">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1579201293916">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1578611248256" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1579201293916" />
   </component>
 </project>

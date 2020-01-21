@@ -38,7 +38,7 @@ public class ServicioSeleccionado extends JFrame {
 	private JPanel pf = new JPanel();
 	private JLabel lblNombre = new JLabel("Nombre del Servicio");
 	private JLabel lblCosto = new JLabel("Costo del Servicio (MXN)");
-	private JLabel lblDescripcion = new JLabel("Descripción");
+	private JLabel lblDescripcion = new JLabel("DescripciÃ³n");
 	private JLabel lblFechaActual = new JLabel("Fecha Actual");
 	private JLabel lblFechaEntrega = new JLabel("Selecciona fecha ");
 	private JLabel lblFotografia = new JLabel();
@@ -109,7 +109,7 @@ public class ServicioSeleccionado extends JFrame {
 						txtDias.setText("" + dias);
 					}
 				} catch (Exception ex) {
-					JOptionPane.showMessageDialog(ServicioSeleccionado.this, "Error en el calculo de las fechas. Para más información, consulte el archivo log.", "Error. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
+					JOptionPane.showMessageDialog(ServicioSeleccionado.this, "Error en el calculo de las fechas. Para mÃ¡s informaciÃ³n, consulte el archivo log.", "Error. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
 					Log.writeLog(path, "Error en el calculo de las fechas." + ex);
 				}
 			}
@@ -159,7 +159,7 @@ public class ServicioSeleccionado extends JFrame {
 		txtCosto.setHorizontalAlignment(SwingConstants.CENTER);
 		txtCosto.setBounds(15, 120, 300, 30);
 		pp.add(txtCosto);
-		TextPrompt placeholder = new TextPrompt("Escriba una descripción.", txtDescripcion);
+		TextPrompt placeholder = new TextPrompt("Escriba una descripciÃ³n.", txtDescripcion);
 		placeholder.changeAlpha(0.75f);
 		placeholder.setHorizontalAlignment(SwingConstants.LEADING);
 		placeholder.setVerticalAlignment(SwingConstants.TOP);
@@ -200,12 +200,12 @@ public class ServicioSeleccionado extends JFrame {
 		//pca
 		pca.setLayout(null);
 		pca.setBackground(new Color(242, 245, 242));
-		pca.setBorder(BorderFactory.createTitledBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null), "Seleccione Carrera/�rea", TitledBorder.ABOVE_TOP, TitledBorder.LEFT, new Font("Segoe UI Symbol", Font.BOLD, 12), Color.BLACK));
+		pca.setBorder(BorderFactory.createTitledBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null), "Seleccione Carrera/ï¿½rea", TitledBorder.ABOVE_TOP, TitledBorder.LEFT, new Font("Segoe UI Symbol", Font.BOLD, 12), Color.BLACK));
 		pca.setBounds(15, 330, 300, 70);
 		pp.add(pca);
 		pf.setLayout(null);
 		pf.setBackground(new Color(242, 245, 242));
-		pf.setBorder(BorderFactory.createTitledBorder(new LineBorder(Color.BLACK, 5, Boolean.FALSE), "Seleccione una fotograf�a o �magen.", TitledBorder.ABOVE_TOP, TitledBorder.LEFT, new Font("Segoe UI Symbol", Font.BOLD, 14), Color.BLACK));
+		pf.setBorder(BorderFactory.createTitledBorder(new LineBorder(Color.BLACK, 5, Boolean.FALSE), "Seleccione una fotografï¿½a o ï¿½magen.", TitledBorder.ABOVE_TOP, TitledBorder.LEFT, new Font("Segoe UI Symbol", Font.BOLD, 14), Color.BLACK));
 		pf.setBounds(350, 15, 737, 600);
 		pp.add(pf);
 
@@ -235,7 +235,7 @@ public class ServicioSeleccionado extends JFrame {
 		btnMetodo.setFont(new Font("Segoe UI Symbol", Font.BOLD, 12));
 		btnMetodo.setText("Opciones");
 		btnMetodo.setIcon(new ImageIcon("src/main/resources/Iconos/opciones.png"));
-		btnMetodo.setToolTipText("Clic para ver la opciones de c�ptura.");
+		btnMetodo.setToolTipText("Clic para ver la opciones de cï¿½ptura.");
 		btnMetodo.setBorder(BorderFactory.createLineBorder(new Color(245, 183, 177), 2, Boolean.FALSE));
 		btnMetodo.setBounds(300, 530, 150, 50);
 		pf.add(btnMetodo);
@@ -314,7 +314,7 @@ public class ServicioSeleccionado extends JFrame {
 
 	private void txtNombreKeyReleased(KeyEvent evt) {
 		if (txtNombre.getText().length() == 60) {
-			JOptionPane.showMessageDialog(ServicioSeleccionado.this, "Has alcanzado el límite de caracteres permitidos.", "Límite Alcanzado. - SiriUS.", JOptionPane.WARNING_MESSAGE, warning);
+			JOptionPane.showMessageDialog(ServicioSeleccionado.this, "Has alcanzado el lÃ­mite de caracteres permitidos.", "LÃ­mite Alcanzado. - SiriUS.", JOptionPane.WARNING_MESSAGE, warning);
 			txtNombre.requestFocus();
 		}
 	}
@@ -350,7 +350,7 @@ public class ServicioSeleccionado extends JFrame {
 	private void txtCostoKeyTyped(KeyEvent evt) {
 		char key = evt.getKeyChar();
 		if ((key < '0' || key > '9') && (key != KeyEvent.VK_BACK_SPACE) && (key != '.' || txtCosto.getText().contains(".")) && key != '\b') {
-			JOptionPane.showMessageDialog(ServicioSeleccionado.this, "Este campo solo aceptar números.", "Caracteres Incorrectos. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+			JOptionPane.showMessageDialog(ServicioSeleccionado.this, "Este campo solo aceptar nÃºmeros.", "Caracteres Incorrectos. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
 			evt.consume();
 		}
 	}
@@ -368,40 +368,40 @@ public class ServicioSeleccionado extends JFrame {
 			String dias = txtDias.getText();
 			String carrera = datosCA[cboCarreras.getSelectedIndex()][0].toString();
 			if (nombre.isEmpty()) {
-				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "El campo nombre del servicio no puede quedar vacío.", "Campo vacío. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "El campo nombre del servicio no puede quedar vacÃ­o.", "Campo vacÃ­o. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
 				txtNombre.requestFocus();
 			} else if (costo.isEmpty()) {
-				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "El campo costo del servicio no puede quedar vacío.", "Campo vacío. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "El campo costo del servicio no puede quedar vacÃ­o.", "Campo vacÃ­o. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
 				txtCosto.requestFocus();
 			} else if (descripcion.isEmpty()) {
-				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "El campo descripción no puede quedar vacío.", "Campo vacío. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "El campo descripciÃ³n no puede quedar vacÃ­o.", "Campo vacÃ­o. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
 				txtDescripcion.requestFocus();
 			} else if (dias.isEmpty()) {
-				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "El campo días de entrega no puede quedar vacío.", "Campo vacío. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "El campo dÃ­as de entrega no puede quedar vacÃ­o.", "Campo vacÃ­o. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
 				txtDias.requestFocus();
 			} else if (origen == null) {
-				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "Debes seleccionar una imagen o tomar una fotografía.", "Selección de imagen o fotografía. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
+				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "Debes seleccionar una imagen o tomar una fotografÃ­a.", "SelecciÃ³n de imagen o fotografÃ­a. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
 				btnMetodo.requestFocus();
 			} else if (s.servicioModificar(id, nombre, carrera, Double.parseDouble(costo), descripcion, dias, origen)) {
-				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "La modificiación se ejecutó correctamente.", "Modificación correcta. - SiRiUS.", JOptionPane.INFORMATION_MESSAGE, exito);
+				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "La modificiaciÃ³n se ejecutÃ³ correctamente.", "ModificaciÃ³n correcta. - SiRiUS.", JOptionPane.INFORMATION_MESSAGE, exito);
 				this.abrirListado(usuario);
 				this.dispose();
 			} else {
-				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "La modificación no se ejecutó, debido a un error de comunicación con la base de datos. Esta ventana se cerrará.", "Error de comunicación. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
+				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "La modificaciÃ³n no se ejecutÃ³, debido a un error de comunicaciÃ³n con la base de datos. Esta ventana se cerrarÃ¡.", "Error de comunicaciÃ³n. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
 				this.dispose();
 			}
 		}
 	}
 
 	private void btnEliminarActionPerformed(ActionEvent evt) {
-		int res = JOptionPane.showConfirmDialog(ServicioSeleccionado.this, "¿Realmente deseas eliminar este servicio?", "Confirmar eliminación. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
+		int res = JOptionPane.showConfirmDialog(ServicioSeleccionado.this, "Â¿Realmente deseas eliminar este servicio?", "Confirmar eliminaciÃ³n. - SiRiUS.", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, pregunta);
 		if (res == JOptionPane.YES_OPTION) {
 			if (s.servicioEliminar(id)) {
-				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "La eliminación se ejecutó correctamente.", "Eliminación correcta. - SiRiUS.", JOptionPane.INFORMATION_MESSAGE, exito);
+				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "La eliminaciÃ³n se ejecutÃ³ correctamente.", "EliminaciÃ³n correcta. - SiRiUS.", JOptionPane.INFORMATION_MESSAGE, exito);
 				this.abrirListado(usuario);
 				this.dispose();
 			} else {
-				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "La eliminación no se ejecutó debido a un error de comunicación con la base de datos. Esta ventana se cerrará.", "Error de comunicación. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
+				JOptionPane.showMessageDialog(ServicioSeleccionado.this, "La eliminaciÃ³n no se ejecutÃ³ debido a un error de comunicaciÃ³n con la base de datos. Esta ventana se cerrarÃ¡.", "Error de comunicaciÃ³n. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
 				this.dispose();
 			}
 		}

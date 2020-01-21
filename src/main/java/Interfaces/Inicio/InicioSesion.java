@@ -22,7 +22,7 @@ public class InicioSesion extends JFrame {
     private JPanel pt = new JPanel();
     private JPanel po = new JPanel();
     private JLabel lblTiempo = new JLabel("60");
-    private JLabel lblOportunidades = new JLabel("2");
+    private JLabel lblOportunidades = new JLabel("3");
     private JLabel lblPassword = new JLabel("Contraseña");
     private JLabel lblLogin = new JLabel("Nombre de Usuario");
     private JLabel lblLogo = new JLabel();
@@ -258,8 +258,8 @@ public class InicioSesion extends JFrame {
             txtLogin.requestFocus();
             txtLogin.setText("");
             txtPassword.setText("");
-            lblOportunidades.setText(String.valueOf(oportunidades));
             oportunidades--;
+            lblOportunidades.setText(String.valueOf(oportunidades));
             if (oportunidades == 0) {
                 JOptionPane.showMessageDialog(InicioSesion.this, "Las oportunidades se han agotado. El sistema se cerrará.", "Oportunidades agotadas. - SiRiUS.", JOptionPane.ERROR_MESSAGE, error);
                 System.exit(0);
