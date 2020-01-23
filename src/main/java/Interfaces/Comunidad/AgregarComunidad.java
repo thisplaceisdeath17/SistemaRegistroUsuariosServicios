@@ -176,7 +176,7 @@ public class AgregarComunidad extends JFrame {
 		this.setSize(1100, 627);
 		this.setLocationRelativeTo(null);
 		this.setUndecorated(Boolean.TRUE);
-		this.setIconImage(new ImageIcon("src/main/resources/Iconos/logo.png").getImage());
+		this.setIconImage(new ImageIcon("src/main/resources/Iconos/comunidad_16.png").getImage());
 
 		//Eventos
 		txtMatricula.addKeyListener(new KeyListener() {
@@ -359,6 +359,10 @@ public class AgregarComunidad extends JFrame {
 			ImageIcon imagen = new ImageIcon(origen.getPath());
 			ImageIcon imagenScaled = new ImageIcon(imagen.getImage().getScaledInstance(lblFotografia.getWidth(), lblFotografia.getHeight(), Image.SCALE_SMOOTH));
 			lblFotografia.setIcon(imagenScaled);
+		} else {
+			ImageIcon no_image = new ImageIcon("src/main/resources/Iconos/no_image.png");
+			ImageIcon imagen = new ImageIcon(no_image.getImage().getScaledInstance(lblFotografia.getWidth(), lblFotografia.getHeight(), Image.SCALE_SMOOTH));
+			lblFotografia.setIcon(imagen);
 		}
 	}
 }

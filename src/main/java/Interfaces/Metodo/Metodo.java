@@ -204,6 +204,8 @@ public class Metodo extends JDialog {
 	}
 
 	private void btnVolverActionPerformed(ActionEvent evt) {
+		webcamPanel.stop();
+		lblFotografia.setIcon(null);
 		origen = null;
 		this.dispose();
 	}

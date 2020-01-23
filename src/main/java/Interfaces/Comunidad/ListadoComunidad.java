@@ -125,7 +125,7 @@ public class ListadoComunidad extends JInternalFrame {
 		this.setResizable(Boolean.FALSE);
 		this.setSize(800, 600);
 		this.setTitle(".: Listado de Carrera y Áreas. - SiRiUS. :.");
-		this.setFrameIcon(new ImageIcon("src/main/resources/Iconos/iconitotese_16.png"));
+		this.setFrameIcon(new ImageIcon("src/main/resources/Iconos/listado_16.png"));
 		this.add(pp);
 
 		//Eventos de componentes
@@ -254,7 +254,7 @@ public class ListadoComunidad extends JInternalFrame {
 	}
 
 	private void itemReporteActionPerfermed(ActionEvent evt) {
-		if (usuario[2].equals("Super Administrador")) {
+		if (usuario[2].equals("Administrador")) {
 			JOptionPane.showMessageDialog(ListadoComunidad.this, "Debes ser Super Administrador para seleccionar un registro.", "Selección denegada. - SiRiUS.", JOptionPane.WARNING_MESSAGE, warning);
 		} else if (itemReporte.isArmed()) {
 			int matricula = (int) table.getValueAt(table.getSelectedRow(), 0);

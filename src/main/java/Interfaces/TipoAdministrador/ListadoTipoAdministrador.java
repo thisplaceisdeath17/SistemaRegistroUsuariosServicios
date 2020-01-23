@@ -33,6 +33,7 @@ public class ListadoTipoAdministrador extends JInternalFrame {
 	private Object[][] datosTA = null;
 	private DefaultTableModel modelo = null;
 	private String[] usuario;
+	private int cantidad;
 
 	public ListadoTipoAdministrador(String[] usuario) {
 		initComponents();
@@ -43,6 +44,14 @@ public class ListadoTipoAdministrador extends JInternalFrame {
 	}
 
 	private void initComponents() {
+		//Propiedades del lbl
+		cantidad = ta.tipoAdministradorContar();
+		lblNumero.setText("# de Registros: " + cantidad);
+		lblNumero.setForeground(Color.BLACK);
+		lblNumero.setFont(new Font("Segoe UI Symbol", Font.BOLD, 14));
+		lblNumero.setBounds(320, 520, 150, 30);
+		pp.add(lblNumero);
+
 		//Propiedades del la caja de texto
 		TextPrompt placeholder = new TextPrompt("Búsqueda", txtBusqueda);
 		placeholder.changeAlpha(0.75f);

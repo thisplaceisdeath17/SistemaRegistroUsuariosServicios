@@ -441,6 +441,11 @@ public class ComunidadSeleccionado extends JFrame {
 			ImageIcon imagen = new ImageIcon(origen.getPath());
 			ImageIcon imagenScaled = new ImageIcon(imagen.getImage().getScaledInstance(lblFotografia.getWidth(), lblFotografia.getHeight(), Image.SCALE_SMOOTH));
 			lblFotografia.setIcon(imagenScaled);
+		} else {
+			origen = new File(new File(".").getAbsolutePath() + "/src/main/resources/Fotografias/Comunidad/" + datosCom[4].toString());
+			imagen = new ImageIcon("src/main/resources/Fotografias/Comunidad/" + datosCom[4].toString());
+			imagenScaled = new ImageIcon(imagen.getImage().getScaledInstance(lblFotografia.getWidth(), lblFotografia.getHeight(), Image.SCALE_SMOOTH));
+			lblFotografia.setIcon(imagenScaled);
 		}
 	}
 
