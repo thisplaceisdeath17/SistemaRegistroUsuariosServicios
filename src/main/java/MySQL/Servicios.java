@@ -104,6 +104,7 @@ public class Servicios extends Conexion{
 				res = procedimiento.executeQuery();
 				if (res.next()) {
 					cantidad = res.getInt("cantidad");
+					System.out.println(cantidad);
 				}
 				res.close();
 				procedimiento.close();

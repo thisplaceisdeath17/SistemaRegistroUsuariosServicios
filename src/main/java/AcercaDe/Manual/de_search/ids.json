@@ -1,0 +1,146 @@
+{
+  "1": [
+    "Página principal",
+    "index.htm"
+  ],
+  "2": [
+    "2. Introducción.",
+    "2__introduccion_.htm"
+  ],
+  "3": [
+    "3. Splash Screen",
+    "3__splash_screen.htm"
+  ],
+  "4": [
+    "4. Ventana de Inicio de Sesión.",
+    "4__ventana_de_inicio_de_sesion_.htm"
+  ],
+  "5": [
+    "5. Ventana Principal",
+    "5__ventana_principal.htm"
+  ],
+  "6": [
+    "5.1 Barra de Menú.",
+    "5_1_barra_de_menu_.htm"
+  ],
+  "7": [
+    "5.1.1 Submenú Sistema.",
+    "5_1_1_submenu_sistema_.htm"
+  ],
+  "8": [
+    "5.1.2 Submenú Administradores.",
+    "5_1_2_submenu_administradores_.htm"
+  ],
+  "9": [
+    "5.1.3 Submenú Comunidad.",
+    "5_1_3_submenu_comunidad_.htm"
+  ],
+  "10": [
+    "5.1.4 Submenú Carreras y Áreas.",
+    "5_1_4_submenu_carreras_y_areas_.htm"
+  ],
+  "11": [
+    "5.1.5 Submenú Servicios.",
+    "5_1_5_submenu_servicios_.htm"
+  ],
+  "12": [
+    "5.1.6 Submenú Ayuda.",
+    "5_1_6_submenu_ayuda_.htm"
+  ],
+  "13": [
+    "5.2 Escritorio",
+    "5_2_escritorio.htm"
+  ],
+  "14": [
+    "6. Ventanas Administradores.",
+    "6__ventanas_administradores_.htm"
+  ],
+  "15": [
+    "6.1 Ventana Agregar Administrador.",
+    "6_1_ventana_agregar_administrador_.htm"
+  ],
+  "16": [
+    "6.2 Ventana Ver Administradores.",
+    "6_2_ventana_ver_administradores_.htm"
+  ],
+  "17": [
+    "6.3 Ventana Registrar Tipo de Administrador.",
+    "6_3_ventana_registrar_tipo_de_administrador_.htm"
+  ],
+  "18": [
+    "6.4 Ver Tipos de Administradores.",
+    "6_4_ver_tipos_de_administradores_.htm"
+  ],
+  "19": [
+    "6.5 Ventana Administrador Seleccionado.",
+    "6_5_ventana_administrador_seleccionado_.htm"
+  ],
+  "20": [
+    "6.6 Ventana Tipo de Administrador Seleccionado.",
+    "6_6_ventana_tipo_de_administrador_seleccionado_.htm"
+  ],
+  "21": [
+    "7. Ventanas Comunidad",
+    "7__ventanas_comunidad.htm"
+  ],
+  "22": [
+    "7.1 Ventana Registro de Comunidad.",
+    "7_1_ventana_registro_de_comunidad_.htm"
+  ],
+  "23": [
+    "7.2 Ventana Ver Comunidad.",
+    "7_2_ventana_ver_comunidad_.htm"
+  ],
+  "24": [
+    "7.3 Ventana Comunidad Seleccionado.",
+    "7_3_ventana_comunidad_seleccionado_.htm"
+  ],
+  "25": [
+    "8 . Ventanas Carreras y Áreas.",
+    "8___ventanas_carreras_y_areas_.htm"
+  ],
+  "26": [
+    "8.1 Ventana Registrar Área y/o Carrera.",
+    "8_1_ventana_registrar_area_y_o_carrera_.htm"
+  ],
+  "27": [
+    "8.2 Ventana Ver Carreras y Áreas.",
+    "8_2_ventana_ver_carreras_y_areas_.htm"
+  ],
+  "28": [
+    "8.3 Ventana Carrera o Área Seleccionado.",
+    "8_3_ventana_carrera_o_area_seleccionado_.htm"
+  ],
+  "29": [
+    "9. Ventanas Servicios.",
+    "9__ventanas_servicios_.htm"
+  ],
+  "30": [
+    "9.1 Ventana Registrar Servicio.",
+    "9_1_ventana_registrar_servicio_.htm"
+  ],
+  "31": [
+    "9.2 Ventana Ver Servicios.",
+    "9_2_ventana_ver_servicios_.htm"
+  ],
+  "32": [
+    "9.3 Ventana Servicio Seleccionado.",
+    "9_3_ventana_servicio_seleccionado_.htm"
+  ],
+  "33": [
+    "10. Ventana Método de Captura.",
+    "10__ventana_metodo_de_captura_.htm"
+  ],
+  "34": [
+    "10.1 Método de Captura: Cámara Web.",
+    "10_1_metodo_de_captura__camara_web_.htm"
+  ],
+  "35": [
+    "10.2 Método de Captura: Selección de Imagen.",
+    "10_2_metodo_de_captura__seleccion_de_imagen_.htm"
+  ],
+  "36": [
+    "11. Acerca de y Ver Manual de Usuario.",
+    "11__acerca_de_y_ver_manual_de_usuario_.htm"
+  ]
+}

@@ -1,16 +1,417 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c76f2343-7007-4ca8-a773-2a2dbf32f916" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Fotografias/Comunidad/201321198.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Iconos/comunidad_16.png" afterDir="false" />
+    <list default="true" id="c76f2343-7007-4ca8-a773-2a2dbf32f916" name="Default Changelist" comment="Se le agrego la clase que ayuda a generar un reporte, capturando el número que lo identifica. A parte, al listado de la comunidad, se implemento un menu emergente para que seleccione la comunidad a la que desea generar repore. Con esto concluye la parte funcional del sistema. Correcciones menores. Commit desde IntelliJ.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/LEEME.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/10_1_metodo_de_captura__camara_web_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/10_1_metodo_de_captura__camara_web__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/10_2_metodo_de_captura__seleccion_de_imagen_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/10_2_metodo_de_captura__seleccion_de_imagen__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/10__ventana_metodo_de_captura_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/10__ventana_metodo_de_captura__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/11__acerca_de_y_ver_manual_de_usuario_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/11__acerca_de_y_ver_manual_de_usuario__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/2_1_barra_de_menu_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/2_2_escritorio.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/2__descripcion_del_sistema_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/2__introduccion_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/2__introduccion__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/3__splash_screen.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/3__splash_screen_print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/3__ventana_principal.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/4_1_ventana_inicio_de_sesion.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/4__iniciar_sesion.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/4__ventana_de_inicio_de_sesion_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/4__ventana_de_inicio_de_sesion__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_1_submenu_sistema_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_1_submenu_sistema__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_2_submenu_administradores_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_2_submenu_administradores__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_3_submenu_comunidad_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_3_submenu_comunidad__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_4_submenu_carreras_y_areas_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_4_submenu_carreras_y_areas__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_5_submenu_servicios_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_5_submenu_servicios__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_6_submenu_ayuda_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_6_submenu_ayuda__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_barra_de_menu_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_1_barra_de_menu__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_2_escritorio.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5_2_escritorio_print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5__ventana_principal.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/5__ventana_principal_print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6_1_submenu_sistema_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6_1_ventana_agregar_administrador_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6_1_ventana_agregar_administrador__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6_2_ventana_ver_administradores_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6_2_ventana_ver_administradores__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6_3_ventana_registrar_tipo_de_administrador_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6_3_ventana_registrar_tipo_de_administrador__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6_4_ver_tipos_de_administradores_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6_4_ver_tipos_de_administradores__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6_5_ventana_administrador_seleccionado_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6_5_ventana_administrador_seleccionado__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6_6_ventana_tipo_de_administrador_seleccionado_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6_6_ventana_tipo_de_administrador_seleccionado__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6__menu_sistema_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6__ventanas_administradores_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/6__ventanas_administradores__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/7_1_ventana_registro_de_comunidad_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/7_1_ventana_registro_de_comunidad__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/7_2_ventana_ver_comunidad_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/7_2_ventana_ver_comunidad__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/7_3_ventana_comunidad_seleccionado_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/7_3_ventana_comunidad_seleccionado__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/7__ventanas_comunidad.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/7__ventanas_comunidad_print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/8_1_ventana_registrar_area_y_o_carrera_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/8_1_ventana_registrar_area_y_o_carrera__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/8_2_ventana_ver_carreras_y_areas_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/8_2_ventana_ver_carreras_y_areas__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/8_3_ventana_carrera_o_area_seleccionado_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/8_3_ventana_carrera_o_area_seleccionado__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/8___ventanas_carreras_y_areas_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/8___ventanas_carreras_y_areas__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/9_1_ventana_registrar_servicio_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/9_1_ventana_registrar_servicio__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/9_2_ventana_ver_servicios_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/9_2_ventana_ver_servicios__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/9_3_ventana_servicio_seleccionado_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/9_3_ventana_servicio_seleccionado__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/9__ventanas_servicios_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/9__ventanas_servicios__print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/css/printed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0031.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0032.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0033.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0034.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0035.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0036.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0037.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0038.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0039.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0041.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0042.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0043.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0044.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0045.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0046.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0047.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0048.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0049.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu004a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu004b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu004c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu004d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu004e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu004f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0050.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0051.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0052.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0053.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0054.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0055.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0056.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0057.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu0059.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu00c1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu00c9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/0xu00da.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/ids.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_search/prefixes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/de_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/descripcion_del_sistema_.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10_1_metodo_de_captura__camara_web__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10_1_metodo_de_captura__camara_web__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10_1_metodo_de_captura__camara_web__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10_1_metodo_de_captura__camara_web__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10_1_metodo_de_captura__camara_web__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10_2_metodo_de_captura__seleccion_de_imagen__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10_2_metodo_de_captura__seleccion_de_imagen__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10_2_metodo_de_captura__seleccion_de_imagen__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10_2_metodo_de_captura__seleccion_de_imagen__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10_2_metodo_de_captura__seleccion_de_imagen__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10_2_metodo_de_captura__seleccion_de_imagen__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10__ventana_metodo_de_captura__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10__ventana_metodo_de_captura__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10__ventana_metodo_de_captura__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10__ventana_metodo_de_captura__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10__ventana_metodo_de_captura__custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_10__ventana_metodo_de_captura__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_11__acerca_de_y_ver_manual_de_usuario__custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_1_barra_de_menu__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_1_barra_de_menu__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_1_barra_de_menu__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_1_barra_de_menu__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_1_barra_de_menu__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_1_barra_de_menu__control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_1_barra_de_menu__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_2_escritorio_control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_2_escritorio_control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_2_escritorio_control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_2_escritorio_control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_2_escritorio_control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_2_escritorio_control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_2_escritorio_control_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2_2_escritorio_screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_2__introduccion__custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_3__splash_screen_custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_3__ventana_principal_custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4_1_ventana_inicio_de_sesion_control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4_1_ventana_inicio_de_sesion_control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4_1_ventana_inicio_de_sesion_control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4_1_ventana_inicio_de_sesion_control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4_1_ventana_inicio_de_sesion_control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4_1_ventana_inicio_de_sesion_control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4_1_ventana_inicio_de_sesion_control_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4_1_ventana_inicio_de_sesion_control_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4_1_ventana_inicio_de_sesion_control_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4_1_ventana_inicio_de_sesion_screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4__ventana_de_inicio_de_sesion__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4__ventana_de_inicio_de_sesion__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4__ventana_de_inicio_de_sesion__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4__ventana_de_inicio_de_sesion__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4__ventana_de_inicio_de_sesion__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4__ventana_de_inicio_de_sesion__control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_4__ventana_de_inicio_de_sesion__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_1_submenu_sistema__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_1_submenu_sistema__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_1_submenu_sistema__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_1_submenu_sistema__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_2_submenu_administradores__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_2_submenu_administradores__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_2_submenu_administradores__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_2_submenu_administradores__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_2_submenu_administradores__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_2_submenu_administradores__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_3_submenu_comunidad__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_3_submenu_comunidad__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_3_submenu_comunidad__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_3_submenu_comunidad__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_4_submenu_carreras_y_areas__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_4_submenu_carreras_y_areas__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_4_submenu_carreras_y_areas__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_4_submenu_carreras_y_areas__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_5_submenu_servicios__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_5_submenu_servicios__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_5_submenu_servicios__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_5_submenu_servicios__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_6_submenu_ayuda__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_6_submenu_ayuda__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_6_submenu_ayuda__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_6_submenu_ayuda__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_barra_de_menu__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_barra_de_menu__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_barra_de_menu__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_barra_de_menu__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_barra_de_menu__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_barra_de_menu__control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_1_barra_de_menu__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_2_escritorio_control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_2_escritorio_control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_2_escritorio_control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_2_escritorio_control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_2_escritorio_control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_2_escritorio_control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_2_escritorio_control_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5_2_escritorio_screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_5__ventana_principal_custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_1_submenu_sistema__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_1_submenu_sistema__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_1_submenu_sistema__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_1_submenu_sistema__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_1_ventana_agregar_administrador__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_1_ventana_agregar_administrador__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_1_ventana_agregar_administrador__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_1_ventana_agregar_administrador__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_1_ventana_agregar_administrador__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_1_ventana_agregar_administrador__control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_1_ventana_agregar_administrador__control_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_1_ventana_agregar_administrador__control_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_1_ventana_agregar_administrador__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_2_ventana_ver_administradores__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_2_ventana_ver_administradores__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_2_ventana_ver_administradores__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_2_ventana_ver_administradores__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_2_ventana_ver_administradores__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_2_ventana_ver_administradores__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_3_ventana_registrar_tipo_de_administrador__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_3_ventana_registrar_tipo_de_administrador__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_3_ventana_registrar_tipo_de_administrador__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_3_ventana_registrar_tipo_de_administrador__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_4_ver_tipos_de_administradores__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_4_ver_tipos_de_administradores__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_4_ver_tipos_de_administradores__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_4_ver_tipos_de_administradores__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_4_ver_tipos_de_administradores__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_4_ver_tipos_de_administradores__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_5_ventana_administrador_seleccionado__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_5_ventana_administrador_seleccionado__control_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_5_ventana_administrador_seleccionado__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_5_ventana_administrador_seleccionado__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_5_ventana_administrador_seleccionado__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_5_ventana_administrador_seleccionado__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_5_ventana_administrador_seleccionado__control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_5_ventana_administrador_seleccionado__control_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_5_ventana_administrador_seleccionado__control_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_5_ventana_administrador_seleccionado__control_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_5_ventana_administrador_seleccionado__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_6_ventana_tipo_de_administrador_seleccionado__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_6_ventana_tipo_de_administrador_seleccionado__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_6_ventana_tipo_de_administrador_seleccionado__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_6_ventana_tipo_de_administrador_seleccionado__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_6_ventana_tipo_de_administrador_seleccionado__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6_6_ventana_tipo_de_administrador_seleccionado__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_6__ventanas_administradores__custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_1_ventana_registro_de_comunidad__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_1_ventana_registro_de_comunidad__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_1_ventana_registro_de_comunidad__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_1_ventana_registro_de_comunidad__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_1_ventana_registro_de_comunidad__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_1_ventana_registro_de_comunidad__control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_1_ventana_registro_de_comunidad__control_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_1_ventana_registro_de_comunidad__control_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_1_ventana_registro_de_comunidad__control_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_1_ventana_registro_de_comunidad__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_2_ventana_ver_comunidad__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_2_ventana_ver_comunidad__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_2_ventana_ver_comunidad__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_2_ventana_ver_comunidad__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_2_ventana_ver_comunidad__control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_2_ventana_ver_comunidad__custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_2_ventana_ver_comunidad__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_3_ventana_comunidad_seleccionado__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_3_ventana_comunidad_seleccionado__control_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_3_ventana_comunidad_seleccionado__control_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_3_ventana_comunidad_seleccionado__control_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_3_ventana_comunidad_seleccionado__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_3_ventana_comunidad_seleccionado__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_3_ventana_comunidad_seleccionado__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_3_ventana_comunidad_seleccionado__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_3_ventana_comunidad_seleccionado__control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_3_ventana_comunidad_seleccionado__control_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_3_ventana_comunidad_seleccionado__control_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_3_ventana_comunidad_seleccionado__control_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7_3_ventana_comunidad_seleccionado__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_7__ventanas_comunidad_custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_1_ventana_registrar_area_y_o_carrera__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_1_ventana_registrar_area_y_o_carrera__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_1_ventana_registrar_area_y_o_carrera__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_1_ventana_registrar_area_y_o_carrera__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_1_ventana_registrar_area_y_o_carrera__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_1_ventana_registrar_area_y_o_carrera__control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_1_ventana_registrar_area_y_o_carrera__control_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_1_ventana_registrar_area_y_o_carrera__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_2_ventana_ver_carreras_y_areas__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_2_ventana_ver_carreras_y_areas__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_2_ventana_ver_carreras_y_areas__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_2_ventana_ver_carreras_y_areas__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_2_ventana_ver_carreras_y_areas__control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_2_ventana_ver_carreras_y_areas__custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_2_ventana_ver_carreras_y_areas__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_3_ventana_carrera_o_area_seleccionado__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_3_ventana_carrera_o_area_seleccionado__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_3_ventana_carrera_o_area_seleccionado__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_3_ventana_carrera_o_area_seleccionado__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_3_ventana_carrera_o_area_seleccionado__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_3_ventana_carrera_o_area_seleccionado__control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_3_ventana_carrera_o_area_seleccionado__control_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_3_ventana_carrera_o_area_seleccionado__control_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8_3_ventana_carrera_o_area_seleccionado__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_8___ventanas_carreras_y_areas__custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_1_ventana_registrar_servicio__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_1_ventana_registrar_servicio__control_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_1_ventana_registrar_servicio__control_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_1_ventana_registrar_servicio__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_1_ventana_registrar_servicio__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_1_ventana_registrar_servicio__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_1_ventana_registrar_servicio__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_1_ventana_registrar_servicio__control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_1_ventana_registrar_servicio__control_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_1_ventana_registrar_servicio__control_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_1_ventana_registrar_servicio__control_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_1_ventana_registrar_servicio__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_2_ventana_ver_servicios__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_2_ventana_ver_servicios__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_2_ventana_ver_servicios__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_2_ventana_ver_servicios__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_2_ventana_ver_servicios__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_2_ventana_ver_servicios__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__control_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__control_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__control_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__control_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__control_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__control_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__control_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9_3_ventana_servicio_seleccionado__screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_9__ventanas_servicios__custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_bullet_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_bullet_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_bullet_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_bullet_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_bullet_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_bullet_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_bullet_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_bullet_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_bullet_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_bullet_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_bullet_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_bullet_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_bullet_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_file_list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_header_custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_index_custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_splash_screen_custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_ventana_inicio_de_sesion_control_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_ventana_inicio_de_sesion_control_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_ventana_inicio_de_sesion_control_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_ventana_inicio_de_sesion_control_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_ventana_inicio_de_sesion_control_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_ventana_inicio_de_sesion_control_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_ventana_inicio_de_sesion_control_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_ventana_inicio_de_sesion_control_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_ventana_inicio_de_sesion_control_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/drex_ventana_inicio_de_sesion_screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/i/blocks/interface-icons/delicious_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/i/blocks/interface-icons/digg-button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/i/blocks/interface-icons/interface-icons-sprite-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/i/blocks/interface-icons/interface-icons-sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/i/blocks/search/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/i/blocks/splitter/splitter-sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/i/blocks/tree/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/i/blocks/work-zone/header-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/i/null.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/index.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/index_print.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/iniciar_sesion.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/js/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/js/all2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/js/drexplain.data.index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/js/oembed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/js/socialscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/js/tooltips.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/primer_subtema.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/splash_screen.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/un_tema_sin_numero.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/Manual/ventana_inicio_de_sesion.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcercaDe/ManualdeUsuario.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/AgregarComunidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/AgregarComunidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/ComunidadSeleccionado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/ComunidadSeleccionado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/ListadoComunidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Comunidad/ListadoComunidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Metodo/Metodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Metodo/Metodo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/TipoAdministrador/ListadoTipoAdministrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/TipoAdministrador/ListadoTipoAdministrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fotografias/Comunidad/201321194.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fotografias/Comunidad/201321194.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Conexion/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Conexion/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Inicio/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Inicio/VentanaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Servicios/ServicioSeleccionado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Servicios/ServicioSeleccionado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MySQL/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MySQL/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MySQL/Servicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MySQL/Servicios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fotografias/Servicios/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fotografias/Servicios/2.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +453,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/Iconos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -61,6 +462,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\roule\IdeaProjects\SiRiUSv3.0\src\main\java" />
       <recent name="C:\Users\roule\IdeaProjects\SiRiUSv3.0\src\main\resources\Iconos" />
       <recent name="C:\Users\roule\IdeaProjects\SiRiUSv3.0\src\main\java\TextPrompt" />
     </key>
@@ -171,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579565296585</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Se le agrego la clase que ayuda a generar un reporte, capturando el número que lo identifica. A parte, al listado de la comunidad, se implemento un menu emergente para que seleccione la comunidad a la que desea generar repore. Con esto concluye la parte funcional del sistema. Correcciones menores. Commit desde IntelliJ.">
+      <created>1579738562758</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1579738562758</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -186,7 +595,8 @@
     <MESSAGE value="Se termino el modulo de comunidad, incluyendo la libreria para la captura del imagenes y fotografias. Commit desde IntelliJ." />
     <MESSAGE value="Se termino el modulo de servicios, el sistema esta completo, a falta de correcciones ortográficos, la creación del manual de usuario y reportes. Commit desde IntelliJ." />
     <MESSAGE value="Se le agrego la clase que ayuda a generar un reporte, capturando el número que lo identifica. A parte, al listado de la comunidad, se implemento un menu emergente para que seleccione la comunidad a la que desea generar repore. Con esto concluye la parte funcional del sistema. Commit desde IntelliJ." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se le agrego la clase que ayuda a generar un reporte, capturando el número que lo identifica. A parte, al listado de la comunidad, se implemento un menu emergente para que seleccione la comunidad a la que desea generar repore. Con esto concluye la parte funcional del sistema. Commit desde IntelliJ." />
+    <MESSAGE value="Se le agrego la clase que ayuda a generar un reporte, capturando el número que lo identifica. A parte, al listado de la comunidad, se implemento un menu emergente para que seleccione la comunidad a la que desea generar repore. Con esto concluye la parte funcional del sistema. Correcciones menores. Commit desde IntelliJ." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se le agrego la clase que ayuda a generar un reporte, capturando el número que lo identifica. A parte, al listado de la comunidad, se implemento un menu emergente para que seleccione la comunidad a la que desea generar repore. Con esto concluye la parte funcional del sistema. Correcciones menores. Commit desde IntelliJ." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -211,30 +621,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="484" y="253" width="398" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.768@0.0.1366.768" timestamp="1578343397790" />
-    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2" timestamp="1579565292444">
+    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2" timestamp="1580342939645">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1579565292444" />
+    <state x="348" y="0" width="986" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1580342939645" />
     <state x="485" y="128" key="FileChooserDialogImpl" timestamp="1579208684974">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="485" y="128" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1579208684974" />
-    <state width="1323" height="248" key="GridCell.Tab.0.bottom" timestamp="1579738523913">
+    <state width="1323" height="247" key="GridCell.Tab.0.bottom" timestamp="1580343647578">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="248" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579738523913" />
-    <state width="1323" height="248" key="GridCell.Tab.0.center" timestamp="1579738523913">
+    <state width="1323" height="247" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580343647578" />
+    <state width="1323" height="247" key="GridCell.Tab.0.center" timestamp="1580343647562">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="248" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1579738523913" />
-    <state width="1323" height="248" key="GridCell.Tab.0.left" timestamp="1579738523913">
+    <state width="1323" height="247" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1580343647562" />
+    <state width="1323" height="247" key="GridCell.Tab.0.left" timestamp="1580343647562">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="248" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1579738523913" />
-    <state width="1323" height="248" key="GridCell.Tab.0.right" timestamp="1579738523913">
+    <state width="1323" height="247" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1580343647562" />
+    <state width="1323" height="247" key="GridCell.Tab.0.right" timestamp="1580343647578">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="248" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1579738523913" />
+    <state width="1323" height="247" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1580343647578" />
     <state width="1323" height="216" key="GridCell.Tab.1.bottom" timestamp="1579043339129">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -255,14 +665,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="191" y="54" width="998" height="708" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1579377623055" />
-    <state x="275" y="120" key="Vcs.Push.Dialog.v2" timestamp="1579565328037">
+    <state x="275" y="120" key="Vcs.Push.Dialog.v2" timestamp="1579738599507">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="120" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1579565328037" />
-    <state x="391" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1579719309019">
+    <state x="275" y="120" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1579738599507" />
+    <state x="391" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1580342895349">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="391" y="212" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1579719309019" />
+    <state x="391" y="212" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1580342895349" />
     <state x="298" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578521198629">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -271,10 +681,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="494" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1578511620222" />
-    <state x="271" y="188" key="git4idea.merge.GitPullDialog" timestamp="1579565309334">
+    <state x="271" y="188" key="git4idea.merge.GitPullDialog" timestamp="1579738581211">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="271" y="188" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1579565309334" />
+    <state x="271" y="188" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1579738581211" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1579042070511">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

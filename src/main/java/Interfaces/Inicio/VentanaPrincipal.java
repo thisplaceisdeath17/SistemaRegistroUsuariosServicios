@@ -14,6 +14,8 @@ import Interfaces.TipoAdministrador.ListadoTipoAdministrador;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -363,6 +365,21 @@ public class VentanaPrincipal extends JFrame implements Runnable {
                 itemListadoServiciosActionPerformed(e);
             }
         });
+        itemManual.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                itemManualActionPerformed(e);
+            }
+        });
+    }
+
+    public void manual(String manual) {
+        try {
+            File manualUser = new File(manual);
+            Desktop.getDesktop().open(manualUser);
+        } catch (IOException ex) {
+            System.out.println("Error al abrir el manual: " + ex);
+        }
     }
 
     private void confirmarCierre() {
@@ -501,6 +518,11 @@ public class VentanaPrincipal extends JFrame implements Runnable {
             ls.setLocation(x, y);
             ls.show();
         }
+    }
+
+    private void itemManualActionPerformed(ActionEvent evt) {
+        //Param abrir el manuel, se necesita cambiar la ruta al formato que el SO que se esta utilizando, requiera.
+        manual("src/main/java/AcercaDe/Manual/index.htm");
     }
 
     public void hora() {

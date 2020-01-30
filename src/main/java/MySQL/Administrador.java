@@ -20,8 +20,8 @@ public class Administrador extends Conexion {
 
     private final int campos = 6;
     private ResultSet res;
-    private CallableStatement proc;
-    private String passwordX;
+	private CallableStatement procedimiento;
+	private String passwordX;
 
     /**
      * @param login
@@ -33,20 +33,20 @@ public class Administrador extends Conexion {
         String[] datos = new String[3];
         try {
             if (conectar()) {
-                proc = getConn().prepareCall("{CALL administradorValidar(?, ?)}");
-                passwordX = DigestUtils.sha256Hex(password);
-                proc.setString("paramLogin", login);
-                proc.setString("paramPassword", passwordX);
-                res = proc.executeQuery();
-                if (res.next()) {
-                    datos[0] = res.getString("login");
-                    datos[1] = res.getString("nombre_administrador");
-                    datos[2] = res.getString("descripcion");
-                    System.out.println("Login: " + datos[0] + " Nombre: " + datos[1] + " Tipo: " + datos[2]);
-                }
-                res.close();
-                proc.close();
-                desconectar();
+	            procedimiento = getConn().prepareCall("{CALL administradorValidar(?, ?)}");
+	            passwordX = DigestUtils.sha256Hex(password);
+	            procedimiento.setString("paramLogin", login);
+	            procedimiento.setString("paramPassword", passwordX);
+	            res = procedimiento.executeQuery();
+	            if (res.next()) {
+		            datos[0] = res.getString("login");
+		            datos[1] = res.getString("nombre_administrador");
+		            datos[2] = res.getString("descripcion");
+		            System.out.println("Login: " + datos[0] + " Nombre: " + datos[1] + " Tipo: " + datos[2]);
+	            }
+	            res.close();
+	            procedimiento.close();
+	            desconectar();
             }
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorValidar: " + ex);
@@ -63,16 +63,16 @@ public class Administrador extends Conexion {
         boolean existe = false;
         try {
             if (conectar()) {
-                proc = getConn().prepareCall("{CALL administradorExiste(?)}");
-                proc.setString("paramLogin", login);
-                res = proc.executeQuery();
-                if (res.next()) {
-                    existe = true;
-                    System.out.println(existe);
-                }
-                res.close();
-                proc.close();
-                desconectar();
+	            procedimiento = getConn().prepareCall("{CALL administradorExiste(?)}");
+	            procedimiento.setString("paramLogin", login);
+	            res = procedimiento.executeQuery();
+	            if (res.next()) {
+		            existe = true;
+		            System.out.println(existe);
+	            }
+	            res.close();
+	            procedimiento.close();
+	            desconectar();
             }
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorExiste: " + ex);
@@ -89,16 +89,16 @@ public class Administrador extends Conexion {
 		int cantidad = 0;
 		try {
 			if (conectar()) {
-				proc = getConn().prepareCall("{CALL administradorContar()}");
-				res = proc.executeQuery();
+				procedimiento = getConn().prepareCall("{CALL administradorContar()}");
+				res = procedimiento.executeQuery();
 				if (res.next()) {
 					cantidad = res.getInt("cantidad");
 					System.out.println(cantidad);
 				}
 				res.close();
-                proc.close();
-                desconectar();
-            }
+				procedimiento.close();
+				desconectar();
+			}
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorContar: " + ex);
         }
@@ -114,19 +114,19 @@ public class Administrador extends Conexion {
 		Object[][] datos = new Object[administradorContar()][campos - 2];
 		try {
 			if (conectar()) {
-				proc = getConn().prepareCall("{CALL administradorConsultar()}");
-				res = proc.executeQuery();
+				procedimiento = getConn().prepareCall("{CALL administradorConsultar()}");
+				res = procedimiento.executeQuery();
 				int registro = 0;
 				while (res.next()) {
 					for (int i = 0; i < campos - 2; i++) {
 						datos[registro][i] = res.getObject(i + 1);
 						System.out.println(datos[registro][i]);
-                    }
-                    registro++;
-                }
-                res.close();
-                proc.close();
-                desconectar();
+					}
+					registro++;
+				}
+				res.close();
+				procedimiento.close();
+				desconectar();
             }
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorConsultar: " + ex);
@@ -145,17 +145,17 @@ public class Administrador extends Conexion {
 		int cantidad = 0;
 		try {
 			if (conectar()) {
-				proc = getConn().prepareCall("{CALL administradorContarBuscado(?)}");
-				proc.setString("paramDato", dato);
-				res = proc.executeQuery();
+				procedimiento = getConn().prepareCall("{CALL administradorContarBuscado(?)}");
+				procedimiento.setString("paramDato", dato);
+				res = procedimiento.executeQuery();
 				if (res.next()) {
 					cantidad = res.getInt("cantidad");
 					System.out.println(cantidad);
 				}
-                res.close();
-                proc.close();
-                desconectar();
-            }
+				res.close();
+				procedimiento.close();
+				desconectar();
+			}
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorContarBuscado " + ex);
         }
@@ -173,20 +173,20 @@ public class Administrador extends Conexion {
 		Object[][] datos = new Object[administradorContarBuscado(dato)][campos - 2];
 		try {
 			if (conectar()) {
-				proc = getConn().prepareCall("{CALL administradorBuscar(?)}");
-				proc.setString("paramDato", dato);
-				res = proc.executeQuery();
+				procedimiento = getConn().prepareCall("{CALL administradorBuscar(?)}");
+				procedimiento.setString("paramDato", dato);
+				res = procedimiento.executeQuery();
 				int registro = 0;
 				while (res.next()) {
 					for (int i = 0; i < campos - 2; i++) {
 						datos[registro][i] = res.getObject(i + 1);
-                        System.out.println(datos[registro][i]);
-                    }
-                    registro++;
-                }
-                res.close();
-                proc.close();
-                desconectar();
+						System.out.println(datos[registro][i]);
+					}
+					registro++;
+				}
+				res.close();
+				procedimiento.close();
+				desconectar();
             }
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorBuscar " + ex);
@@ -205,19 +205,19 @@ public class Administrador extends Conexion {
 		Object[] dato = new Object[campos + 1];
 		try {
 			if (conectar()) {
-				proc = getConn().prepareCall("{CALL administradorSeleccionar(?)}");
-				proc.setString("paramLogin", login);
-				res = proc.executeQuery();
+				procedimiento = getConn().prepareCall("{CALL administradorSeleccionar(?)}");
+				procedimiento.setString("paramLogin", login);
+				res = procedimiento.executeQuery();
 				if (res.next()) {
 					for (int i = 0; i < campos; i++) {
 						dato[i] = res.getObject(i + 1);
 						System.out.println(dato[i]);
-                    }
-                }
-                res.close();
-                proc.close();
-                desconectar();
-            }
+					}
+				}
+				res.close();
+				procedimiento.close();
+				desconectar();
+			}
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorSeleccionar " + ex);
         }
@@ -237,19 +237,19 @@ public class Administrador extends Conexion {
         boolean insertado = false;
         try {
             if (conectar()) {
-                proc = getConn().prepareCall("{CALL administradorInsertar(?, ?, ?, ?, ?)}");
-                passwordX = DigestUtils.sha256Hex(password);
-                proc.setString("paramLogin", login);
-                proc.setString("paramNombre", nombre);
-                proc.setString("paramPassword", passwordX);
-                proc.setString("paramCarrera", carrera);
-                proc.setString("paramTipo", tipo);
-                proc.executeUpdate();
-                insertado = true;
-                System.out.println(insertado);
+	            procedimiento = getConn().prepareCall("{CALL administradorInsertar(?, ?, ?, ?, ?)}");
+	            passwordX = DigestUtils.sha256Hex(password);
+	            procedimiento.setString("paramLogin", login);
+	            procedimiento.setString("paramNombre", nombre);
+	            procedimiento.setString("paramPassword", passwordX);
+	            procedimiento.setString("paramCarrera", carrera);
+	            procedimiento.setString("paramTipo", tipo);
+	            procedimiento.executeUpdate();
+	            insertado = true;
+	            System.out.println(insertado);
             }
-            proc.close();
-            desconectar();
+	        procedimiento.close();
+	        desconectar();
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorInsertar " + ex);
         }
@@ -267,14 +267,14 @@ public class Administrador extends Conexion {
 		boolean eliminado = false;
 		try {
 			if (conectar()) {
-				proc = getConn().prepareCall("{CALL administradorEliminar(?)}");
-				proc.setString("paramLogin", login);
-				proc.executeUpdate();
+				procedimiento = getConn().prepareCall("{CALL administradorEliminar(?)}");
+				procedimiento.setString("paramLogin", login);
+				procedimiento.executeUpdate();
 				eliminado = true;
 				System.out.println(eliminado);
-				proc.close();
-                desconectar();
-            }
+				procedimiento.close();
+				desconectar();
+			}
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorEliminar " + ex);
 		}
@@ -296,19 +296,19 @@ public class Administrador extends Conexion {
 		boolean modificado = true;
 		try {
 			if (conectar()) {
-				proc = getConn().prepareCall("{CALL administradorModificar(?, ?, ?, ?, ?)}");
+				procedimiento = getConn().prepareCall("{CALL administradorModificar(?, ?, ?, ?, ?)}");
 				passwordX = DigestUtils.sha256Hex(password);
-				proc.setString("paramLogin", login);
-				proc.setString("paramNombre", nombre);
-				proc.setString("paramPassword", passwordX);
-				proc.setString("paramCarrera", carrera);
-                proc.setString("paramTipo", tipo);
-                proc.executeUpdate();
-                modificado = true;
-                System.out.println(modificado);
-                proc.close();
-                desconectar();
-            }
+				procedimiento.setString("paramLogin", login);
+				procedimiento.setString("paramNombre", nombre);
+				procedimiento.setString("paramPassword", passwordX);
+				procedimiento.setString("paramCarrera", carrera);
+				procedimiento.setString("paramTipo", tipo);
+				procedimiento.executeUpdate();
+				modificado = true;
+				System.out.println(modificado);
+				procedimiento.close();
+				desconectar();
+			}
         } catch (SQLException ex) {
             System.out.println("Error en la función administradorModificar: " + ex);
         }

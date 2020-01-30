@@ -1,0 +1,22 @@
+﻿SiRiUS versión 1.2 12/diciembre/2018
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+SISTEMA DE REGISTRO DE USUARIO Y SERVICIOS
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+►Este sistema esta desarrollado con JDK 8 de Java.
+►Para evitar problemas de compatibilidad, es importante que el
+JDK sea de la misma versión.
+►El sistema cuenta con una libreria que utiliza una cámara web,
+por lo tanto, antes de utilizar, es importante tener conectado una
+cámara.
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+►Sistemas compatibles:
+	1. Windows 7 / Windows 10
+	2. Linux
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+Creado por David Esquivel Mendoza
+Alumno del Tecnológico de Estudios Superiores de Ecatepec.
+
+Para dudas y aclaraciones:
+► Teléfono: 834928739482
+► E-mail: esquivel.david17@gmail.com
